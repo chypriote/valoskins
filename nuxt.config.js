@@ -16,7 +16,7 @@ export default {
 	},
 	css: [],
 	plugins: [],
-	components: true,
+	components: false,
 	buildModules: [
 		'@nuxt/typescript-build',
 		'@nuxtjs/stylelint-module',
@@ -36,9 +36,9 @@ export default {
 	 ** See https://content.nuxtjs.org/configuration
 	 */
 	content: {},
-	/*
-	 ** Build configuration
-	 ** See https://nuxtjs.org/api/configuration-build/
-	 */
-	build: {},
+	build: {
+		extend(config) {
+			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
+		},
+	},
 }

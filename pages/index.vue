@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div>
-			<Logo />
+			<logo />
 			<h1 class="title">
 				valoskins
 			</h1>
@@ -29,8 +29,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Logo from '~/components/Logo'
 
-export default Vue.extend({})
+export default Vue.extend({
+	components: { Logo },
+})
 </script>
 
 <style>
