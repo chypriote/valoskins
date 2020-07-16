@@ -5,13 +5,18 @@ module.exports = {
 		node: true,
 	},
 	extends: [
-		'@nuxtjs/eslint-config-typescript',
+		'eslint:recommended',
 		'prettier',
 		'prettier/vue',
+		'@nuxtjs/eslint-config-typescript',
+		'plugin:vue/strongly-recommended',
 		'plugin:prettier/recommended',
 		'plugin:nuxt/recommended',
 	],
 	plugins: ['prettier'],
+	globals: {
+		rgea: true,
+	},
 	rules: {
 		camelcase: 'off',
 		'comma-dangle': [
