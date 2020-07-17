@@ -1,9 +1,8 @@
 <template>
-	<div id="app" class="custom-background bg-gray-100 text-gray-800 h-screen">
+	<div id="app" class="custom-background bg-gray-100 text-gray-800 border-b-2">
 		<div class="container mx-auto">
 			<navbar />
-		</div>
-		<div class="container mx-auto">
+			<hero-section />
 			<div class="px-4 md:block">
 				<nuxt />
 			</div>
@@ -14,8 +13,9 @@
 <script lang="ts">
 import Vue from 'vue'
 import Navbar from '~/components/Navbar.vue'
+import HeroSection from '~/components/HeroSection.vue'
 
 export default Vue.extend({
-	components: { Navbar },
+	components: { HeroSection, Navbar },
 })
 </script>

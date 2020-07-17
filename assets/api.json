@@ -1,0 +1,2593 @@
+{
+  "version": "release-01.03",
+  "characters": [
+    {
+      "name": "Breach",
+      "assetName": "Default__Breach_PrimaryAsset_C"
+    },
+    {
+      "name": "Raze",
+      "assetName": "Default__Clay_PrimaryAsset_C"
+    },
+    {
+      "name": "Cypher",
+      "assetName": "Default__Gumshoe_PrimaryAsset_C"
+    },
+    {
+      "name": "Sova",
+      "assetName": "Default__Hunter_PrimaryAsset_C"
+    },
+    {
+      "name": "Viper",
+      "assetName": "Default__Pandemic_PrimaryAsset_C"
+    },
+    {
+      "name": "Phoenix",
+      "assetName": "Default__Phoenix_PrimaryAsset_C"
+    },
+    {
+      "name": "Brimstone",
+      "assetName": "Default__Sarge_PrimaryAsset_C"
+    },
+    {
+      "name": "Sage",
+      "assetName": "Default__Thorne_PrimaryAsset_C"
+    },
+    {
+      "name": "Reyna",
+      "assetName": "Default__Vampire_PrimaryAsset_C"
+    },
+    {
+      "name": "Omen",
+      "assetName": "Default__Wraith_PrimaryAsset_C"
+    },
+    {
+      "name": "Jett",
+      "assetName": "Default__Wushu_PrimaryAsset_C"
+    }
+  ],
+  "maps": [
+    {
+      "name": "Ascent",
+      "assetName": "Ascent"
+    },
+    {
+      "name": "Split",
+      "assetName": "Bonsai"
+    },
+    {
+      "name": "Bind",
+      "assetName": "Duality"
+    },
+    {
+      "name": "Entraînement",
+      "assetName": "Range"
+    },
+    {
+      "name": "Terrain d'entraînement",
+      "assetName": "Range_NewPlayerExperience_Master"
+    },
+    {
+      "name": "Haven",
+      "assetName": "Triad"
+    }
+  ],
+  "chromas": [
+    {
+      "name": "Odin (point EXE)",
+      "assetName": "Default__HeavyMachineGun_Grid_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Odin",
+      "assetName": "Default__HeavyMachineGun_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Aristocrate)",
+      "assetName": "Default__LightMachineGun_ArtDeco_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Rush)",
+      "assetName": "Default__LightMachineGun_Electroflux_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Prisme)",
+      "assetName": "Default__LightMachineGun_Iridescence_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares",
+      "assetName": "Default__LightMachineGun_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Aristocrate)",
+      "assetName": "Default__AK_ArtDeco_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 6\n(variante 2 Bleu)",
+      "assetName": "Default__AK_Dragon_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 7\n(variante 3 Sombre)",
+      "assetName": "Default__AK_Dragon_Dark_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 5\n(variante 1 Rouge)",
+      "assetName": "Default__AK_Dragon_Red_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien)",
+      "assetName": "Default__AK_Dragon_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (point EXE)",
+      "assetName": "Default__AK_Grid_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial) niveau 6 \n(variante 2 Bleu)",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial) niveau 5 \n(variante 1 Orange)",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Orange_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial)",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial) niveau 7\n(variante 3 Jaune)",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Yellow_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Avalanche)",
+      "assetName": "Default__AK_Ice_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Deluxe)",
+      "assetName": "Default__AK_Luxury_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal",
+      "assetName": "Default__AssaultRifle_AK_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Aristocrate)",
+      "assetName": "Default__AssaultRifle_Burst_ArtDeco_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Rush)",
+      "assetName": "Default__AssaultRifle_Burst_Electroflux_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Couture)",
+      "assetName": "Default__AssaultRifle_Burst_LIW_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog",
+      "assetName": "Default__AssaultRifle_Burst_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Convexe)",
+      "assetName": "Default__Burst_Triangles_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Rush)",
+      "assetName": "Default__AssaultRifle_ACR_Electroflux_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Avalanche)",
+      "assetName": "Default__AssaultRifle_ACR_Ice_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Prisme)",
+      "assetName": "Default__AssaultRifle_ACR_Iridescence_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Kingdom)",
+      "assetName": "Default__AssaultRifle_ACR_Kingdom_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Galeries)",
+      "assetName": "Default__AssaultRifle_ACR_Murals_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom",
+      "assetName": "Default__AssaultRifle_ACR_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 6\n(variante 2 Bleu)",
+      "assetName": "Default__AutomaticShotgun_Dragon_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 7\n(variante 3 Sombre)",
+      "assetName": "Default__AutomaticShotgun_Dragon_Dark_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 5\n(variante 1 Rouge)",
+      "assetName": "Default__AutomaticShotgun_Dragon_Red_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien)",
+      "assetName": "Default__AutomaticShotgun_Dragon_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Rush)",
+      "assetName": "Default__AutomaticShotgun_Electroflux_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (point EXE)",
+      "assetName": "Default__AutomaticShotgun_Grid_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Deluxe)",
+      "assetName": "Default__AutomaticShotgun_Luxury_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge",
+      "assetName": "Default__AutomaticShotgun_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Convexe)",
+      "assetName": "Default__AutomaticShotgun_Triangles_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Kingdom)",
+      "assetName": "Default__PumpShotgun_Kingdom_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Galeries)",
+      "assetName": "Default__PumpShotgun_Murals_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky",
+      "assetName": "Default__PumpShotgun_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (RagnaRocker)",
+      "assetName": "Default__AutomaticPistol_Breach_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 6\n(variante 2 Bleu)",
+      "assetName": "Default__AutomaticPistol_Dragon_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 7\n(variante 3 Sombre)",
+      "assetName": "Default__AutomaticPistol_Dragon_Dark_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 5\n(variante 1 Rouge)",
+      "assetName": "Default__AutomaticPistol_Dragon_Red_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien)",
+      "assetName": "Default__AutomaticPistol_Dragon_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Rush)",
+      "assetName": "Default__AutomaticPistol_Electroflux_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Couture)",
+      "assetName": "Default__AutomaticPistol_LIW_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Flamboyant)",
+      "assetName": "Default__AutomaticPistol_Phoenix_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy",
+      "assetName": "Default__AutomaticPistol_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Pistolinha)",
+      "assetName": "Default__BasePistol_Clay_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial) niveau 6 \n(variante 2 Bleu)",
+      "assetName": "Default__BasePistol_HypeBeast_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial) niveau 5\n(variante 1 Orange)",
+      "assetName": "Default__BasePistol_HypeBeast_Orange_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial)",
+      "assetName": "Default__BasePistol_HypeBeast_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial) niveau 7 \n(variante 3 Jaune)",
+      "assetName": "Default__BasePistol_HypeBeast_Yellow_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Avalanche)",
+      "assetName": "Default__BasePistol_Ice_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Kingdom)",
+      "assetName": "Default__BasePistol_Kingdom_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Galeries)",
+      "assetName": "Default__BasePistol_Murals_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic",
+      "assetName": "Default__BasePistol_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Canon de jade)",
+      "assetName": "Default__BasePistol_Thorne_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (point EXE)",
+      "assetName": "Default__LugerPistol_Grid_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Chut)",
+      "assetName": "Default__LugerPistol_Gumshoe_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Prisme)",
+      "assetName": "Default__LugerPistol_Iridescence_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Deluxe)",
+      "assetName": "Default__Luger_Luxury_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal) niveau 5\n(variante 1 Or)",
+      "assetName": "Default__LugerPistol_Sovereign_Gold_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal) niveau 7\n(variante 3 Violet)",
+      "assetName": "Default__LugerPistol_Sovereign_Purple_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal) niveau 6\n(variante 2 Argent)",
+      "assetName": "Default__LugerPistol_Sovereign_Silver_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal)",
+      "assetName": "Default__LugerPistol_Sovereign_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost",
+      "assetName": "Default__LugerPistol_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Vendetta)",
+      "assetName": "Default__LugerPistol_Vampire_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Étouffeur d'âmes)",
+      "assetName": "Default__LugerPistol_Wraith_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Aristocrate)",
+      "assetName": "Default__RevolverPistol_ArtDeco_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Protektor)",
+      "assetName": "Default__RevolverPistol_Hunter_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Pacificateur)",
+      "assetName": "Default__RevolverPistol_Sarge_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff",
+      "assetName": "Default__RevolverPistol_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Convexe)",
+      "assetName": "Default__RevolverPistol_Triangles_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Game Over)",
+      "assetName": "Default__RevolverPistol_Wushu_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Shorty (Venimeux)",
+      "assetName": "Default__SawedOffShotgun_Pandemic_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Shorty",
+      "assetName": "Default__SawedOffShotgun_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien) niveau 6\n(variante 2 Bleu)",
+      "assetName": "Default__BoltSniper_Dragon_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 7\n(variante 3 Sombre)",
+      "assetName": "Default__BoltSniper_Dragon_Dark_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien) niveau 5\n(variante 1 Rouge)",
+      "assetName": "Default__BoltSniper_Dragon_Red_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien)",
+      "assetName": "Default__BoltSniper_Dragon_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Prisme)",
+      "assetName": "Default__BoltSniper_Iridescence_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Deluxe)",
+      "assetName": "Default__BoltSniper_Luxury_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator",
+      "assetName": "Default__BoltSniper_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Convexe)",
+      "assetName": "Default__BoltSniper_Triangles_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial) niveau 6\n(variante 2 Bleu)",
+      "assetName": "Default__DMR_HypeBeast_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial) niveau 5\n(variante 1 Orange)",
+      "assetName": "Default__DMR_HypeBeast_Orange_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial)",
+      "assetName": "Default__DMR_HypeBeast_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial) niveau 7\n(variante 3 Jaune)",
+      "assetName": "Default__DMR_HypeBeast_Yellow_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Galeries)",
+      "assetName": "Default__DMR_Murals_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal) niveau 5\n(variante 1 Or)",
+      "assetName": "Default__DMR_Sovereign_Gold_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal) niveau 7\n(variante 3 Violet)",
+      "assetName": "Default__DMR_Sovereign_Purple_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal) niveau 6\n(variante 2 Argent)",
+      "assetName": "Default__DMR_Sovereign_Silver_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal)",
+      "assetName": "Default__DMR_Sovereign_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian",
+      "assetName": "Default__DMR_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Avalanche)",
+      "assetName": "Default__LeverSniper_Ice_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Couture)",
+      "assetName": "Default__LeverSniper_LIW_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Standard",
+      "assetName": "Default__LeverSniper_Murals_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal) niveau 5\n(variante 1 Or)",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Gold_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal) niveau 7\n(variante 3 Violet)",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Purple_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal) niveau 6\n(variante 2 Argent)",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Silver_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal)",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal",
+      "assetName": "Default__LeverSniperRifle_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial) niveau 6\n(variante 2 Bleu)",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Blue_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial) niveau 5\n(variante 1 Orange)",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Orange_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial)",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial) niveau 7\n(variante 3 Jaune)",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Yellow_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Avalanche)",
+      "assetName": "Default__MP5_Ice_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Prisme)",
+      "assetName": "Default__MP5_Iridescence_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Kingdom)",
+      "assetName": "Default__MP5_Kingdom_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Deluxe)",
+      "assetName": "Default__MP5_Luxury_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre",
+      "assetName": "Default__SubMachineGun_MP5_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Convexe)",
+      "assetName": "Default__MP5_Triangles_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Aristocrate)",
+      "assetName": "Default__Vector_ArtDeco_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Couture)",
+      "assetName": "Default__Vector_LIW_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal) niveau 5\n(variante 1 Or)",
+      "assetName": "Default__Vector_Sovereign_Gold_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal) niveau 7\n(variante 3 Violet)",
+      "assetName": "Default__Vector_Sovereign_Purple_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal) niveau 6\n(variante 2 Argent)",
+      "assetName": "Default__Vector_Sovereign_Silver_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal)",
+      "assetName": "Default__Vector_Sovereign_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger",
+      "assetName": "Default__Vector_Standard_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Feu ancien)",
+      "assetName": "Default__Melee__Dragon_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "",
+      "assetName": "Default__Melee_Base_HypeBeast_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Prisme)",
+      "assetName": "Default__Melee_Iridescence_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Kingdom)",
+      "assetName": "Default__Melee__Kingdom_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Standard",
+      "assetName": "Default__Melee_Base_Luxury_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Royal)",
+      "assetName": "Default__Melee_Base_Sovereign_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Standard)",
+      "assetName": "Default__Melee_Base_Standard_Standard_PrimaryAsset_C"
+    }
+  ],
+  "skins": [
+    {
+      "name": "Odin (point EXE)",
+      "assetName": "Default__HeavyMachineGun_Grid_PrimaryAsset_C"
+    },
+    {
+      "name": "Odin (Standard)",
+      "assetName": "Default__HeavyMachineGun_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Aristocrate)",
+      "assetName": "Default__LightMachineGun_ArtDeco_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Rush)",
+      "assetName": "Default__LightMachineGun_Electroflux_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Prisme)",
+      "assetName": "Default__LightMachineGun_Iridescence_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Standard)",
+      "assetName": "Default__LightMachineGun_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Aristocrate)",
+      "assetName": "Default__AK_ArtDeco_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien)",
+      "assetName": "Default__AK_Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (point EXE)",
+      "assetName": "Default__AK_Grid_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial)",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Avalanche)",
+      "assetName": "Default__AK_Ice_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Deluxe)",
+      "assetName": "Default__AK_Luxury_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Standard)",
+      "assetName": "Default__AssaultRifle_AK_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Aristocrate)",
+      "assetName": "Default__AssaultRifle_Burst_ArtDeco_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Rush)",
+      "assetName": "Default__AssaultRifle_Burst_Electroflux_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Couture)",
+      "assetName": "Default__AssaultRifle_Burst_LIW_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Standard)",
+      "assetName": "Default__AssaultRifle_Burst_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Convexe)",
+      "assetName": "Default__Burst_Triangles_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Rush)",
+      "assetName": "Default__AssaultRifle_ACR_Electroflux_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Avalanche)",
+      "assetName": "Default__AssaultRifle_ACR_Ice_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Prisme)",
+      "assetName": "Default__AssaultRifle_ACR_Iridescence_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Kingdom)",
+      "assetName": "Default__AssaultRifle_ACR_Kingdom_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Galeries)",
+      "assetName": "Default__AssaultRifle_ACR_Murals_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Standard)",
+      "assetName": "Default__AssaultRifle_ACR_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien)",
+      "assetName": "Default__AutomaticShotgun_Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Rush)",
+      "assetName": "Default__AutomaticShotgun_Electroflux_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (point EXE)",
+      "assetName": "Default__AutomaticShotgun_Grid_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Deluxe)",
+      "assetName": "Default__AutomaticShotgun_Luxury_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Standard)",
+      "assetName": "Default__AutomaticShotgun_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Convexe)",
+      "assetName": "Default__AutomaticShotgun_Triangles_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Kingdom)",
+      "assetName": "Default__PumpShotgun_Kingdom_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Galeries)",
+      "assetName": "Default__PumpShotgun_Murals_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Standard)",
+      "assetName": "Default__PumpShotgun_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (RagnaRocker)",
+      "assetName": "Default__AutomaticPistol_Breach_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien)",
+      "assetName": "Default__AutomaticPistol_Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Rush)",
+      "assetName": "Default__AutomaticPistol_Electroflux_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Couture)",
+      "assetName": "Default__AutomaticPistol_LIW_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Flamboyant)",
+      "assetName": "Default__AutomaticPistol_Phoenix_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Standard)",
+      "assetName": "Default__AutomaticPistol_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Pistolinha)",
+      "assetName": "Default__BasePistol_Clay_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial)",
+      "assetName": "Default__BasePistol_HypeBeast_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Avalanche)",
+      "assetName": "Default__BasePistol_Ice_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Kingdom)",
+      "assetName": "Default__BasePistol_Kingdom_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Galeries)",
+      "assetName": "Default__BasePistol_Murals_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Standard)",
+      "assetName": "Default__BasePistol_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Canon de jade)",
+      "assetName": "Default__BasePistol_Thorne_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (point EXE)",
+      "assetName": "Default__LugerPistol_Grid_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Chut)",
+      "assetName": "Default__LugerPistol_Gumshoe_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Prisme)",
+      "assetName": "Default__LugerPistol_Iridescence_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Deluxe)",
+      "assetName": "Default__Luger_Luxury_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal)",
+      "assetName": "Default__LugerPistol_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Standard)",
+      "assetName": "Default__LugerPistol_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Vendetta)",
+      "assetName": "Default__LugerPistol_Vampire_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Étouffeur d'âmes)",
+      "assetName": "Default__LugerPistol_Wraith_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Aristocrate)",
+      "assetName": "Default__RevolverPistol_ArtDeco_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Protektor)",
+      "assetName": "Default__RevolverPistol_Hunter_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Pacificateur)",
+      "assetName": "Default__RevolverPistol_Sarge_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Standard)",
+      "assetName": "Default__RevolverPistol_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Convexe)",
+      "assetName": "Default__RevolverPistol_Triangles_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Game Over)",
+      "assetName": "Default__RevolverPistol_Wushu_PrimaryAsset_C"
+    },
+    {
+      "name": "Shorty (Venimeux)",
+      "assetName": "Default__SawedOffShotgun_Pandemic_PrimaryAsset_C"
+    },
+    {
+      "name": "Shorty (Standard)",
+      "assetName": "Default__SawedOffShotgun_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien)",
+      "assetName": "Default__BoltSniper_Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Prisme)",
+      "assetName": "Default__BoltSniper_Iridescence_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Deluxe)",
+      "assetName": "Default__BoltSniper_Luxury_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Standard)",
+      "assetName": "Default__BoltSniper_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Convexe)",
+      "assetName": "Default__BoltSniper_Triangles_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial)",
+      "assetName": "Default__DMR_HypeBeast_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Galeries)",
+      "assetName": "Default__DMR_Murals_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal)",
+      "assetName": "Default__DMR_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Standard)",
+      "assetName": "Default__DMR_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Avalanche)",
+      "assetName": "Default__LeverSniper_Ice_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Couture)",
+      "assetName": "Default__LeverSniper_LIW_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Galeries)",
+      "assetName": "Default__LeverSniper_Murals_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal)",
+      "assetName": "Default__LeverSniperRifle_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Standard)",
+      "assetName": "Default__LeverSniperRifle_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial)",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Avalanche)",
+      "assetName": "Default__MP5_Ice_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Prisme)",
+      "assetName": "Default__MP5_Iridescence_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Kingdom)",
+      "assetName": "Default__MP5_Kingdom_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Deluxe)",
+      "assetName": "Default__MP5_Luxury_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Standard)",
+      "assetName": "Default__SubMachineGun_MP5_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Convexe)",
+      "assetName": "Default__MP5_Triangles_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Aristocrate)",
+      "assetName": "Default__Vector_ArtDeco_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Couture)",
+      "assetName": "Default__Vector_LIW_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal)",
+      "assetName": "Default__Vector_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Standard)",
+      "assetName": "Default__Vector_Standard_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Feu ancien)",
+      "assetName": "Default__Melee__Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Primordial)",
+      "assetName": "Default__Melee_Base_HypeBeast_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Prisme)",
+      "assetName": "Default__Melee_Iridescence_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Kingdom)",
+      "assetName": "Default__Melee__Kingdom_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Deluxe)",
+      "assetName": "Default__Melee_Base_Luxury_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Royal)",
+      "assetName": "Default__Melee_Base_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée",
+      "assetName": "Default__Melee_Base_Standard_PrimaryAsset_C"
+    }
+  ],
+  "skinLevels": [
+    {
+      "name": "Odin (point EXE)",
+      "assetName": "Default__HeavyMachineGun_Grid_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Odin",
+      "assetName": "Default__HeavyMachineGun_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Aristocrate)",
+      "assetName": "Default__LightMachineGun_ArtDeco_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Rush)",
+      "assetName": "Default__LightMachineGun_Electroflux_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares (Prisme)",
+      "assetName": "Default__LightMachineGun_IridescenceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ares",
+      "assetName": "Default__LightMachineGun_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Aristocrate)",
+      "assetName": "Default__AK_ArtDeco_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 1",
+      "assetName": "Default__AK_Dragon_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 2",
+      "assetName": "Default__AK_Dragon_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 3",
+      "assetName": "Default__AK_Dragon_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Feu ancien) niveau 4",
+      "assetName": "Default__AK_Dragon_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (point EXE)",
+      "assetName": "Default__AK_Grid_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial)",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial) niveau 2",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial) niveau 3",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Primordial) niveau 4",
+      "assetName": "Default__AssaultRifle_AK_HypeBeast_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Avalanche)",
+      "assetName": "Default__AK_Ice_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal (Deluxe)",
+      "assetName": "Default__AK_Luxury_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Vandal",
+      "assetName": "Default__AssaultRifle_AK_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Aristocrate)",
+      "assetName": "Default__AssaultRifle_Burst_ArtDeco_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Rush)",
+      "assetName": "Default__AssaultRifle_Burst_Electroflux_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Couture)",
+      "assetName": "Default__AssaultRifle_Burst_LIWLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog",
+      "assetName": "Default__AssaultRifle_Burst_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog (Convexe)",
+      "assetName": "Default__Burst_Triangles_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Rush)",
+      "assetName": "Default__AssaultRifle_ACR_Electroflux_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Avalanche)",
+      "assetName": "Default__AssaultRifle_ACR_IceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Prisme)",
+      "assetName": "Default__AssaultRifle_ACR_IridescenceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Kingdom)",
+      "assetName": "Default__AssaultRifle_ACR_KingdomLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom (Galeries)",
+      "assetName": "Default__AssaultRifle_ACR_Murals_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Phantom",
+      "assetName": "Default__AssaultRifle_ACR_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 1",
+      "assetName": "Default__AutomaticShotgun_Dragon_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 2",
+      "assetName": "Default__AutomaticShotgun_Dragon_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 3",
+      "assetName": "Default__AutomaticShotgun_Dragon_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Feu ancien) niveau 4",
+      "assetName": "Default__AutomaticShotgun_Dragon_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Rush)",
+      "assetName": "Default__AutomaticShotgun_Electroflux_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (point EXE)",
+      "assetName": "Default__AutomaticShotgun_Grid_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Deluxe)",
+      "assetName": "Default__AutomaticShotgun_Luxury_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge",
+      "assetName": "Default__AutomaticShotgun_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Judge (Convexe)",
+      "assetName": "Default__AutomaticShotgun_Triangles_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Kingdom)",
+      "assetName": "Default__PumpShotgun_KingdomLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky (Galeries)",
+      "assetName": "Default__PumpShotgun_Murals_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Bucky",
+      "assetName": "Default__PumpShotgun_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (RagnaRocker)",
+      "assetName": "Default__AutomaticPistol_Breach_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 1",
+      "assetName": "Default__AutomaticPistol_Dragon_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 2",
+      "assetName": "Default__AutomaticPistol_Dragon_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 3",
+      "assetName": "Default__AutomaticPistol_Dragon_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Feu ancien) niveau 4",
+      "assetName": "Default__AutomaticPistol_Dragon_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Rush)",
+      "assetName": "Default__AutomaticPistol_Electroflux_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Couture)",
+      "assetName": "Default__AutomaticPistol_LIWLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy (Flamboyant)",
+      "assetName": "Default__AutomaticPistol_Phoenix_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy",
+      "assetName": "Default__AutomaticPistol_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Pistolinha)",
+      "assetName": "Default__BasePistol_ClayLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial)",
+      "assetName": "Default__BasePistol_HypeBeast_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial) niveau 2",
+      "assetName": "Default__BasePistol_HypeBeast_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial) niveau 3",
+      "assetName": "Default__BasePistol_HypeBeast_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Primordial) niveau 4",
+      "assetName": "Default__BasePistol_HypeBeast_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Avalanche)",
+      "assetName": "Default__BasePistol_IceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Kingdom)",
+      "assetName": "Default__BasePistol_Kingdom_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Galeries)",
+      "assetName": "Default__BasePistol_Murals_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic",
+      "assetName": "Default__BasePistol_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Classic (Canon de jade)",
+      "assetName": "Default__BasePistol_Thorne_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (point EXE)",
+      "assetName": "Default__LugerPistol_GridLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Chut)",
+      "assetName": "Default__LugerPistol_Gumshoe_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Prisme)",
+      "assetName": "Default__LugerPistol_IridescenceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Deluxe)",
+      "assetName": "Default__Luger_Luxury_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal)",
+      "assetName": "Default__LugerPistol_Sovereign_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal) niveau 2",
+      "assetName": "Default__LugerPistol_Sovereign_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal) niveau 3",
+      "assetName": "Default__LugerPistol_Sovereign_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Royal) niveau 4",
+      "assetName": "Default__LugerPistol_Sovereign_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost",
+      "assetName": "Default__LugerPistol_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Vendetta)",
+      "assetName": "Default__LugerPistol_VampireLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Ghost (Étouffeur d'âmes)",
+      "assetName": "Default__LugerPistol_Wraith_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Aristocrate)",
+      "assetName": "Default__RevolverPistol_ArtDecoLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Protektor)",
+      "assetName": "Default__RevolverPistol_Hunter_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Pacificateur)",
+      "assetName": "Default__RevolverPistol_Sarge_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff",
+      "assetName": "Default__RevolverPistol_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Convexe)",
+      "assetName": "Default__RevolverPistol_Triangles_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff (Game Over)",
+      "assetName": "Default__RevolverPistol_Wushu_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Shorty (Venimeux)",
+      "assetName": "Default__SawedOffShotgun_Pandemic_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Shorty",
+      "assetName": "Default__SawedOffShotgun_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien) niveau 1",
+      "assetName": "Default__BoltSniper_Dragon_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien) niveau 2",
+      "assetName": "Default__BoltSniper_Dragon_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien) niveau 3",
+      "assetName": "Default__BoltSniper_Dragon_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Feu ancien) niveau 4",
+      "assetName": "Default__BoltSniper_Dragon_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Prisme)",
+      "assetName": "Default__BoltSniper_IridescenceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Deluxe)",
+      "assetName": "Default__BoltSniper_Luxury_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator",
+      "assetName": "Default__BoltSniper_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Operator (Convexe)",
+      "assetName": "Default__BoltSniper_Triangles_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial)",
+      "assetName": "Default__DMR_HypeBeast_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial) niveau 2",
+      "assetName": "Default__DMR_HypeBeast_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial) niveau 3",
+      "assetName": "Default__DMR_HypeBeast_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Primordial) niveau 4",
+      "assetName": "Default__DMR_HypeBeast_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Galeries)",
+      "assetName": "Default__DMR_Murals_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal)",
+      "assetName": "Default__DMR_Sovereign_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal) niveau 2",
+      "assetName": "Default__DMR_Sovereign_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal) niveau 3",
+      "assetName": "Default__DMR_Sovereign_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian (Royal) niveau 4",
+      "assetName": "Default__DMR_Sovereign_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Guardian",
+      "assetName": "Default__DMR_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Avalanche)",
+      "assetName": "Default__LeverSniper_IceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Couture)",
+      "assetName": "Default__LeverSniper_LIW_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Galeries)",
+      "assetName": "Default__LeverSniper_Murals_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal)",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal) niveau 2",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal) niveau 3",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal (Royal) niveau 4",
+      "assetName": "Default__LeverSniperRifle_Sovereign_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Marshal",
+      "assetName": "Default__LeverSniperRifle_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial)",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial) niveau 2",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial) niveau 3",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Primordial) niveau 4",
+      "assetName": "Default__SubMachineGun_MP5_HypeBeast_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Avalanche)",
+      "assetName": "Default__MP5_IceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Prisme)",
+      "assetName": "Default__MP5_IridescenceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Kingdom)",
+      "assetName": "Default__MP5_Kingdom_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Deluxe)",
+      "assetName": "Default__MP5_Luxury_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre",
+      "assetName": "Default__SubMachineGun_MP5_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Spectre (Convexe)",
+      "assetName": "Default__MP5_Triangles_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Aristocrate)",
+      "assetName": "Default__Vector_ArtDecoLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Couture)",
+      "assetName": "Default__Vector_LIW_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal)",
+      "assetName": "Default__Vector_Sovereign_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal) niveau 2",
+      "assetName": "Default__Vector_Sovereign_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal) niveau 3",
+      "assetName": "Default__Vector_Sovereign_Lv3_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger (Royal) niveau 4",
+      "assetName": "Default__Vector_Sovereign_Lv4_PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger",
+      "assetName": "Default__Vector_Standard_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Feu ancien)",
+      "assetName": "Default__Melee__Dragon_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Feu ancien) niveau 2",
+      "assetName": "Default__Melee__Dragon_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Primordial)",
+      "assetName": "Default__Melee_Base_HypeBeast_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Primordial) niveau 2",
+      "assetName": "Default__Melee_Base_HypeBeast_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Prisme)",
+      "assetName": "Default__Melee_IridescenceLv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Kingdom)",
+      "assetName": "Default__Melee__Kingdom_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Deluxe)",
+      "assetName": "Default__Melee_Base_Luxury_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Royal)",
+      "assetName": "Default__Melee_Base_Sovereign_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Royal) niveau 2",
+      "assetName": "Default__Melee_Base_Sovereign_Lv2_PrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée (Standard)",
+      "assetName": "Default__Melee_Base_Standard_Lv1_PrimaryAsset_C"
+    }
+  ],
+  "equips": [
+    {
+      "name": "SPIKE",
+      "assetName": "Default__BombEquippable_PrimaryAsset_C"
+    },
+    {
+      "name": "Odin",
+      "assetName": "Default__HMGPrimaryAsset_C"
+    },
+    {
+      "name": "Ares",
+      "assetName": "Default__LMGPrimaryAsset_C"
+    },
+    {
+      "name": "Vandal",
+      "assetName": "Default__AKPrimaryAsset_C"
+    },
+    {
+      "name": "Bulldog",
+      "assetName": "Default__BurstPrimaryAsset_C"
+    },
+    {
+      "name": "Phantom",
+      "assetName": "Default__CarbinePrimaryAsset_C"
+    },
+    {
+      "name": "Judge",
+      "assetName": "Default__AutoShotgunPrimaryAsset_C"
+    },
+    {
+      "name": "Bucky",
+      "assetName": "Default__PumpShotgunPrimaryAsset_C"
+    },
+    {
+      "name": "Frenzy",
+      "assetName": "Default__AutoPistolPrimaryAsset_C"
+    },
+    {
+      "name": "Classic",
+      "assetName": "Default__BasePistolPrimaryAsset_C"
+    },
+    {
+      "name": "Ghost",
+      "assetName": "Default__LugerPrimaryAsset_C"
+    },
+    {
+      "name": "Sheriff",
+      "assetName": "Default__RevolverPrimaryAsset_C"
+    },
+    {
+      "name": "Shorty",
+      "assetName": "Default__SlimPrimaryAsset_C"
+    },
+    {
+      "name": "Operator",
+      "assetName": "Default__BoltSniperPrimaryAsset_C"
+    },
+    {
+      "name": "Guardian",
+      "assetName": "Default__DMRPrimaryAsset_C"
+    },
+    {
+      "name": "Marshal",
+      "assetName": "Default__LeverSniperPrimaryAsset_C"
+    },
+    {
+      "name": "Spectre",
+      "assetName": "Default__MP5PrimaryAsset_C"
+    },
+    {
+      "name": "Stinger",
+      "assetName": "Default__VectorPrimaryAsset_C"
+    },
+    {
+      "name": "Mêlée",
+      "assetName": "Default__Melee_PrimaryAsset_C"
+    },
+    {
+      "name": "Arme dorée",
+      "assetName": "Default__SpikeRush_GoldenGun_PrimaryAsset_C"
+    }
+  ],
+  "gameModes": [
+    {
+      "name": "Standard",
+      "assetName": "BombGameMode"
+    },
+    {
+      "name": "Intégration",
+      "assetName": "NPEGameMode"
+    },
+    {
+      "name": "Spike Rush",
+      "assetName": "QuickBombGameMode"
+    },
+    {
+      "name": "ENTRAÎNEMENT",
+      "assetName": "ShootingRangeGameMode"
+    }
+  ],
+  "sprays": [
+    {
+      "name": "Graffiti Breach",
+      "assetName": "Default__Spray_BreachCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti K.-O.",
+      "assetName": "Default__Spray_Breach01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Biceps en acier",
+      "assetName": "Default__Spray_Breach02_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti FTW",
+      "assetName": "Default__Spray_Bullets_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Campeur",
+      "assetName": "Default__Spray_Camper_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Pardon ?",
+      "assetName": "Default__Spray_CatWhat_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Gruyère au plomb",
+      "assetName": "Default__Spray_Cheese_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Raze",
+      "assetName": "Default__Spray_RazeCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Boum",
+      "assetName": "Default__Spray_Clay01_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti C'est de la bombe",
+      "assetName": "Default__Spray_Clay02_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Explorgi",
+      "assetName": "Default__Spray_Corgi_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Danger",
+      "assetName": "Default__Spray_Danger_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti VALORANT",
+      "assetName": "Default__Spray_Default_VALLogo_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Feu ancien",
+      "assetName": "Default__Spray_Dragon01_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Check",
+      "assetName": "Default__Spray_Fist_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti GG le tireur",
+      "assetName": "Default__Spray_GG_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti GLHF",
+      "assetName": "Default__Spray_GLHFNPE_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Cypher",
+      "assetName": "Default__Spray_CypherCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Le Traqueur",
+      "assetName": "Default__Spray_Gumshoe01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Je te vois",
+      "assetName": "Default__Spray_Gumshoe02_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Tir mortel",
+      "assetName": "Default__Spray_Headshot_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Sova",
+      "assetName": "Default__Spray_SovaCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Envole-toi",
+      "assetName": "Default__Spray_Hunter01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Dans le mille",
+      "assetName": "Default__Spray_Hunter03_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Brique primordiale",
+      "assetName": "Default__Spray_HypeBeastBrick_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Que la lumière cesse",
+      "assetName": "Default__Spray_LightsOut_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Choisis ton poison",
+      "assetName": "Default__Contract_Spray_Pandemic01_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Venin mortel",
+      "assetName": "Default__Contract_Spray_Pandemic02_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Viper",
+      "assetName": "Default__Spray_ViperCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Phoenix",
+      "assetName": "Default__Spray_PhoenixCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti La couronne est à moi",
+      "assetName": "Default__Spray_Phoenix01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Éclat solaire",
+      "assetName": "Default__Spray_Phoenix02_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Salière",
+      "assetName": "Default__Spray_Salt_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Brimstone",
+      "assetName": "Default__Spray_BrimstoneCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Les grands moyens",
+      "assetName": "Default__Spray_Sarge01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Exercice",
+      "assetName": "Default__Spray_Sarge02_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Royal",
+      "assetName": "Default__Spray_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Stratégours",
+      "assetName": "Default__Spray_Tactibear_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Sage",
+      "assetName": "Default__Spray_SageCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Tout va bien",
+      "assetName": "Default__Spray_Thorne01_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Contrôle du pouls",
+      "assetName": "Default__Spray_Thorne03_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti V comme VALORANT",
+      "assetName": "Default__Spray_VALLogoNPE_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Reyna",
+      "assetName": "Default__Spray_ReynaCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Œillade",
+      "assetName": "Default__Spray_Vampire01_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Proie marquée",
+      "assetName": "Default__Spray_Vampire02_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Vie de vandale",
+      "assetName": "Default__Spray_WeaponStencil_Act1BP_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Omen",
+      "assetName": "Default__Spray_OmenCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Il chasse",
+      "assetName": "Default__Contract_Spray_Wraith01_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Concentration obscure",
+      "assetName": "Default__Contract_Spray_Wraith02_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Jett",
+      "assetName": "Default__Spray_JettCallsign_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Kunai filant",
+      "assetName": "Default__Spray_Wushu01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Cours",
+      "assetName": "Default__Spray_Wushu02_Lv1_PrimaryAsset_C"
+    }
+  ],
+  "sprayLevels": [
+    {
+      "name": "Graffiti Breach",
+      "assetName": "Default__Spray_BreachCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti K.-O.",
+      "assetName": "Default__Spray_Breach01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Biceps en acier",
+      "assetName": "Default__Spray_Breach02_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti FTW",
+      "assetName": "Default__Spray_Bullets_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Campeur",
+      "assetName": "Default__Spray_Camper_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Pardon ?",
+      "assetName": "Default__Spray_CatWhat_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Gruyère au plomb",
+      "assetName": "Default__Spray_Cheese_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Raze",
+      "assetName": "Default__Spray_RazeCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Boum",
+      "assetName": "Default__Spray_Clay01_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti C'est de la bombe",
+      "assetName": "Default__Spray_Clay02_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Explorgi",
+      "assetName": "Default__Spray_Corgi_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Danger",
+      "assetName": "Default__Spray_Danger_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti VALORANT",
+      "assetName": "Default__Spray_Default_VALLogo_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Feu ancien",
+      "assetName": "Default__Spray_Dragon01_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Check",
+      "assetName": "Default__Spray_Fist_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti GG le tireur",
+      "assetName": "Default__Spray_GG_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti GLHF",
+      "assetName": "Default__Spray_GLHFNPE_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Cypher",
+      "assetName": "Default__Spray_CypherCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Le Traqueur",
+      "assetName": "Default__Spray_Gumshoe01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Je te vois",
+      "assetName": "Default__Spray_Gumshoe02_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Tir mortel",
+      "assetName": "Default__Spray_Headshot_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Sova",
+      "assetName": "Default__Spray_SovaCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Envole-toi",
+      "assetName": "Default__Spray_Hunter01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Dans le mille",
+      "assetName": "Default__Spray_Hunter03_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Brique primordiale",
+      "assetName": "Default__Spray_HypeBeastBrick_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Que la lumière cesse",
+      "assetName": "Default__Spray_LightsOut_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Choisis ton poison",
+      "assetName": "Default__Contract_Spray_Pandemic01_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Venin mortel",
+      "assetName": "Default__Contract_Spray_Pandemic02_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Viper",
+      "assetName": "Default__Spray_ViperCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Phoenix",
+      "assetName": "Default__Spray_PhoenixCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti La couronne est à moi",
+      "assetName": "Default__Spray_Phoenix01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Éclat solaire",
+      "assetName": "Default__Spray_Phoenix02_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Salière",
+      "assetName": "Default__Spray_Salt_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Brimstone",
+      "assetName": "Default__Spray_BrimstoneCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Les grands moyens",
+      "assetName": "Default__Spray_Sarge01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Exercice",
+      "assetName": "Default__Spray_Sarge02_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Royal",
+      "assetName": "Default__Spray_Sovereign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Stratégours",
+      "assetName": "Default__Spray_Tactibear_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Sage",
+      "assetName": "Default__Spray_SageCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Tout va bien",
+      "assetName": "Default__Spray_Thorne01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Contrôle du pouls",
+      "assetName": "Default__Spray_Thorne03_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti V comme VALORANT",
+      "assetName": "Default__Spray_VALLogoNPE_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Reyna",
+      "assetName": "Default__Spray_ReynaCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Œillade",
+      "assetName": "Default__Spray_Vampire01_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Proie marquée",
+      "assetName": "Default__Spray_Vampire02_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Vie de vandale",
+      "assetName": "Default__Spray_WeaponStencil_Act1BP_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Omen",
+      "assetName": "Default__Spray_OmenCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Il chasse",
+      "assetName": "Default__Contract_Spray_Wraith01_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Concentration obscure",
+      "assetName": "Default__Contract_Spray_Wraith02_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Jett",
+      "assetName": "Default__Spray_JettCallsign_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Kunai filant",
+      "assetName": "Default__Spray_Wushu01_Lv1_Level1_PrimaryAsset_C"
+    },
+    {
+      "name": "Graffiti Cours",
+      "assetName": "Default__Spray_Wushu02_Lv1_Level1_PrimaryAsset_C"
+    }
+  ],
+  "charms": [
+    {
+      "name": "Porte-bonheur Marteau",
+      "assetName": "Default__GunBuddy_Breach_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Balle",
+      "assetName": "Default__GunBuddy_Bullet01_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pièce de la bêta fermée",
+      "assetName": "Default__GunBuddy_CB_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Goupille",
+      "assetName": "Default__GunBuddy_Clay_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pièce ÉP1 2020",
+      "assetName": "Default__GunBuddy_Coin_EP1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Caisse",
+      "assetName": "Default__GunBuddy_Crate1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Caisse de radianite",
+      "assetName": "Default__GunBuddy_CrateKingdom_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Beignet",
+      "assetName": "Default__GunBuddy_Doughnut_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Feu ancien",
+      "assetName": "Default__GunBuddy_Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Ravissement d'Ascent",
+      "assetName": "Default__GunBuddy_FloatingIsland_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Chapeau blanc",
+      "assetName": "Default__GunBuddy_Gumshoe_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Chouette",
+      "assetName": "Default__GunBuddy_Hunter_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Primordial",
+      "assetName": "Default__GunBuddy_Hypebeast_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Chalutations",
+      "assetName": "Default__GunBuddy_LuckyCat_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pièce de VALORANT",
+      "assetName": "Default__GunBuddy_Onboarding_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Fiole de toxines",
+      "assetName": "Default__GunBuddy_Pandemic_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Soleil d'or",
+      "assetName": "Default__GunBuddy_Phoenix_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pizza",
+      "assetName": "Default__GunBuddy_Pizza_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Cristal de radianite",
+      "assetName": "Default__GunBuddy_RadianiteDiamond_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Plaques d'identité",
+      "assetName": "Default__GunBuddy_Sarge_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Royal",
+      "assetName": "Default__GunBuddy_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Fromage",
+      "assetName": "Default__GunBuddy_SwissCheese_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Orbe de radianite",
+      "assetName": "Default__GunBuddy_Thorne_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Grille-pain",
+      "assetName": "Default__GunBuddy_Toaster_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Capsule d'âmes",
+      "assetName": "Default__GunBuddy_Vampire_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Souvenir sinistre",
+      "assetName": "Default__GunBuddy_Wraith_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Couteau de poche",
+      "assetName": "Default__GunBuddy_Wushu_PrimaryAsset_C"
+    }
+  ],
+  "charmLevels": [
+    {
+      "name": "Porte-bonheur Marteau",
+      "assetName": "Default__GunBuddy_Breach_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Balle",
+      "assetName": "Default__GunBuddy_Bullet01_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pièce de la bêta fermée",
+      "assetName": "Default__GunBuddy_CB_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Goupille",
+      "assetName": "Default__GunBuddy_Clay_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pièce ÉP1 2020",
+      "assetName": "Default__GunBuddy_Coin_EP1_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Caisse",
+      "assetName": "Default__GunBuddy_Crate1_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Caisse de radianite",
+      "assetName": "Default__GunBuddy_CrateKingdom_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Beignet",
+      "assetName": "Default__GunBuddy_Doughnut_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Feu ancien",
+      "assetName": "Default__GunBuddy_Dragon_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Ravissement d'Ascent",
+      "assetName": "Default__GunBuddy_FloatingIsland_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Chapeau blanc",
+      "assetName": "Default__GunBuddy_Gumshoe_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Chouette",
+      "assetName": "Default__GunBuddy_Hunter_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Primordial",
+      "assetName": "Default__GunBuddy_Hypebeast_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Chalutations",
+      "assetName": "Default__GunBuddy_LuckyCat_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pièce de VALORANT",
+      "assetName": "Default__GunBuddy_Onboarding_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Fiole de toxines",
+      "assetName": "Default__GunBuddy_Pandemic_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Soleil d'or",
+      "assetName": "Default__GunBuddy_Phoenix_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Pizza",
+      "assetName": "Default__GunBuddy_Pizza_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Cristal de radianite",
+      "assetName": "Default__GunBuddy_RadianiteDiamond_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Plaques d'identité",
+      "assetName": "Default__GunBuddy_Sarge_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Royal",
+      "assetName": "Default__GunBuddy_Sovereign_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Fromage",
+      "assetName": "Default__GunBuddy_SwissCheese_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Orbe de radianite",
+      "assetName": "Default__GunBuddy_Thorne_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Grille-pain",
+      "assetName": "Default__GunBuddy_Toaster_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Capsule d'âmes",
+      "assetName": "Default__GunBuddy_Vampire_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Souvenir sinistre",
+      "assetName": "Default__GunBuddy_Wraith_Lv1_PrimaryAsset_C"
+    },
+    {
+      "name": "Porte-bonheur Couteau de poche",
+      "assetName": "Default__GunBuddy_Wushu_Lv1_PrimaryAsset_C"
+    }
+  ],
+  "playerCards": [
+    {
+      "name": "Carte VALORANT",
+      "assetName": "Default__Playercard_Default_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Fondateur MMXX",
+      "assetName": "Default__Playercard_Founder_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Vertraulich",
+      "assetName": "Default__Playercard_KJ_Tease_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Qui veut jouer ?",
+      "assetName": "Default__Playercard_LFG_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte ID de Reyna",
+      "assetName": "Default__Playercard_Reyna_Joins_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Bêta de VALORANT",
+      "assetName": "Default__PlayerCard_CBBase_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Pionnier de la bêta",
+      "assetName": "Default__PlayerCard_CBUpgrade_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Observateur Bêta",
+      "assetName": "Default__Playercard_Watcher_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Breach de VALORANT",
+      "assetName": "Default__Playercard_Breach_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Jour de paye",
+      "assetName": "Default__Playercard_Breach_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Brimstone de VALORANT",
+      "assetName": "Default__Playercard_Brimstone_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte On n'abandonne personne",
+      "assetName": "Default__Playercard_Brimstone_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Cypher de VALORANT",
+      "assetName": "Default__Playercard_Cypher_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Folie du rédempteur",
+      "assetName": "Default__PlayerCard_Cypher_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Jett de VALORANT",
+      "assetName": "Default__Playercard_Jett_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Double tranchant",
+      "assetName": "Default__Playercard_Jett_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Omen de VALORANT",
+      "assetName": "Default__Playercard_Omen_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Je ne crains plus la mort",
+      "assetName": "Default__Playercard_Omen_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Phoenix de VALORANT",
+      "assetName": "Default__Playercard_Phoenix_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Pyromane",
+      "assetName": "Default__Playercard_Phoenix_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Raze de VALORANT",
+      "assetName": "Default__Playercard_Raze_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Démarque-toi",
+      "assetName": "Default__Playercard_Raze_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Reyna de VALORANT",
+      "assetName": "Default__Playercard_Reyna_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Vengeance éternelle",
+      "assetName": "Default__Playercard_Reyna_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Sage de VALORANT",
+      "assetName": "Default__Playercard_Sage_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Suite d'épreuves",
+      "assetName": "Default__Playercard_Sage_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Sova de VALORANT",
+      "assetName": "Default__Playercard_Sova_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Dans la ligne de mire",
+      "assetName": "Default__Playercard_Sova_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Viper de VALORANT",
+      "assetName": "Default__Playercard_Viper_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Nuit noire",
+      "assetName": "Default__Playercard_Viper_2_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Ascent",
+      "assetName": "Default__Playercard_Ascent_1_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte ÉP1 MMXX",
+      "assetName": "Default__Playercard_Commemorative_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Mascotte de VALORANT",
+      "assetName": "Default__Playercard_Corgi_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Mystère séculaire",
+      "assetName": "Default__Playercard_Octopus_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Primordial",
+      "assetName": "Default__Playercards_Prime_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Nouvelle recrue",
+      "assetName": "Default__Playercard_Rookie_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Royal",
+      "assetName": "Default__PlayerCards_Sovereign_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Vitrail",
+      "assetName": "Default__PlayerCard_StainedGlass_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Feu ancien",
+      "assetName": "Default__Playercard_Dragon_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Protocole V",
+      "assetName": "Default__PlayerCard_NPE01_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Code Rouge",
+      "assetName": "Default__PlayerCard_NPE02_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Aube de VALORANT",
+      "assetName": "Default__PlayerCard_NPE03_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Plans du Classic",
+      "assetName": "Default__Playercard_Classic_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Plans de l'OP",
+      "assetName": "Default__Playercard_Operator_PrimaryAsset_C"
+    },
+    {
+      "name": "Carte Plans du Spectre",
+      "assetName": "Default__Playercard_Spectre_PrimaryAsset_C"
+    }
+  ],
+  "playerTitles": [
+    {
+      "name": "All-Star",
+      "assetName": "Default__PlayerTitle_AllStar_PrimaryAsset_C"
+    },
+    {
+      "name": "Ascendant",
+      "assetName": "Default__PlayerTitle_Ascendant_PrimaryAsset_C"
+    },
+    {
+      "name": "Balistique",
+      "assetName": "Default__PlayerTitle_Ballistic_PrimaryAsset_C"
+    },
+    {
+      "name": "Risque biologique",
+      "assetName": "Default__PlayerTitle_Biohazard_PrimaryAsset_C"
+    },
+    {
+      "name": "Catastrophique",
+      "assetName": "Default__PlayerTitle_Catastrophic_PrimaryAsset_C"
+    },
+    {
+      "name": "Entraîneur",
+      "assetName": "Default__PlayerTitle_Coach_PrimaryAsset_C"
+    },
+    {
+      "name": "Désorientant",
+      "assetName": "Default__PlayerTitle_Concussive_PrimaryAsset_C"
+    },
+    {
+      "name": "Tireur d'élite",
+      "assetName": "Default__PlayerTitle_Deadeye_PrimaryAsset_C"
+    },
+    {
+      "name": " ",
+      "assetName": "Default__PlayerTitle_Default_PrimaryAsset_C"
+    },
+    {
+      "name": "Impératrice",
+      "assetName": "Default__PlayerTitle_Empress_PrimaryAsset_C"
+    },
+    {
+      "name": "Éclairé",
+      "assetName": "Default__PlayerTitle_Enlightened_PrimaryAsset_C"
+    },
+    {
+      "name": "Premier",
+      "assetName": "Default__PlayerTitle_First_PrimaryAsset_C"
+    },
+    {
+      "name": "Flambeur",
+      "assetName": "Default__PlayerTitle_Flashy_PrimaryAsset_C"
+    },
+    {
+      "name": "Génie",
+      "assetName": "Default__PlayerTitle_Genius_PrimaryAsset_C"
+    },
+    {
+      "name": "Héraut",
+      "assetName": "Default__PlayerTitle_Harbinger_PrimaryAsset_C"
+    },
+    {
+      "name": "Véloce",
+      "assetName": "Default__PlayerTitle_Hasty_PrimaryAsset_C"
+    },
+    {
+      "name": "Haut commandement",
+      "assetName": "Default__PlayerTitle_HighCommand_PrimaryAsset_C"
+    },
+    {
+      "name": "Champion",
+      "assetName": "Default__PlayerTitle_Hotshot_PrimaryAsset_C"
+    },
+    {
+      "name": "Traqueur",
+      "assetName": "Default__PlayerTitle_Hunter_PrimaryAsset_C"
+    },
+    {
+      "name": "Ouragan",
+      "assetName": "Default__PlayerTitle_Hurricane_PrimaryAsset_C"
+    },
+    {
+      "name": "Voleur d'esprit",
+      "assetName": "Default__PlayerTitle_MindThief_PrimaryAsset_C"
+    },
+    {
+      "name": "Vieux briscard",
+      "assetName": "Default__PlayerTitle_OldDog_PrimaryAsset_C"
+    },
+    {
+      "name": "Pandémie",
+      "assetName": "Default__PlayerTitle_Pandemic_PrimaryAsset_C"
+    },
+    {
+      "name": "Recrue",
+      "assetName": "Default__PlayerTitle_Recruit_PrimaryAsset_C"
+    },
+    {
+      "name": "Revenant",
+      "assetName": "Default__PlayerTitle_Revenant_PrimaryAsset_C"
+    },
+    {
+      "name": "Sauvage",
+      "assetName": "Default__PlayerTitle_Savage_PrimaryAsset_C"
+    },
+    {
+      "name": "Tireur précis",
+      "assetName": "Default__PlayerTitle_Sharpshooter_PrimaryAsset_C"
+    },
+    {
+      "name": "Rapide",
+      "assetName": "Default__PlayerTitle_Swift_PrimaryAsset_C"
+    },
+    {
+      "name": "Mécano",
+      "assetName": "Default__PlayerTitle_Techie_PrimaryAsset_C"
+    },
+    {
+      "name": "Toxique",
+      "assetName": "Default__PlayerTitle_Toxic_PrimaryAsset_C"
+    },
+    {
+      "name": "V1.0",
+      "assetName": "Default__PlayerTitle_V1dot0_PrimaryAsset_C"
+    },
+    {
+      "name": "Gardien",
+      "assetName": "Default__PlayerTitle_Warden_PrimaryAsset_C"
+    },
+    {
+      "name": "Explosif",
+      "assetName": "Default__PlayerTitle_Warhead_PrimaryAsset_C"
+    },
+    {
+      "name": "Chien de garde",
+      "assetName": "Default__PlayerTitle_Watchdog_PrimaryAsset_C"
+    },
+    {
+      "name": "RECRUE DE LA BÊTA FERMÉE",
+      "assetName": "Default__PlayerTitle_CBRecruit_PrimaryAsset_C"
+    },
+    {
+      "name": "V1.0",
+      "assetName": "Default__PlayerTitle_CBVet_PrimaryAsset_C"
+    },
+    {
+      "name": "Ascension",
+      "assetName": "Default__PlayerTitle_Episode1-1_Ascending_PrimaryAsset_C"
+    },
+    {
+      "name": "Premier jour",
+      "assetName": "Default__PlayerTitle_Episode1-1_DayOne_PrimaryAsset_C"
+    },
+    {
+      "name": "Loup solitaire",
+      "assetName": "Default__PlayerTitle_Episode1-1_LoneWolf_PrimaryAsset_C"
+    },
+    {
+      "name": "Esprit d'équipe",
+      "assetName": "Default__PlayerTitle_Episode1-1_TeamPlayer_PrimaryAsset_C"
+    }
+  ]
+}
