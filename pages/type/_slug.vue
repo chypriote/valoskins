@@ -8,7 +8,7 @@
 import { Context } from '@nuxt/types'
 
 export default {
-	async asyncData ({ $strapi, params }: Context & { $strapi: any }) {
+	async asyncData ({ $strapi, params }: Context) {
 		const collection = await $strapi.find('weapon-types', { slug: params.slug })
 
 		return { collection: collection.pop() }

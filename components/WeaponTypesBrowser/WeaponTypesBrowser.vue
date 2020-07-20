@@ -2,7 +2,7 @@
 	<div class="mb-4">
 		<h2 class="uppercase text-xl">Browse by type of weapon</h2>
 		<div class="flex">
-			<weapon-type v-for="type in types" :key="type.slug" :weapon-type="type" />
+			<weapon-type v-for="type in weaponTypes" :key="type.id" :weapon-type="type" />
 		</div>
 	</div>
 </template>
@@ -13,9 +13,11 @@ import WeaponType from '~/components/WeaponTypesBrowser/WeaponType.vue'
 
 export default Vue.extend({
 	components: { WeaponType },
-	data: () => ({ types: [] }),
-	async mounted () {
-		this.types = await this.$strapi.find('weapon-types')
+	props: {
+		weaponTypes: {
+			type: Array,
+			required: true,
+		},
 	},
 })
 </script>
