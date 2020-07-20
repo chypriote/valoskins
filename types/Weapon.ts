@@ -24,7 +24,20 @@ export type WeaponType = {
 	id: number
 	name: string
 	slug: string
+	created_at: Date
+	updated_at: Date
+	picture: UploadedPicture
 	weapons: Weapon[]
+}
+
+export type UploadedPicture = {
+	id: number
+	name: string
+	alternativeText: string
+	caption: string
+	width: number
+	height: number
+	url: string
 }
 
 export type WeaponSkin = {

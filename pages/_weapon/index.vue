@@ -17,9 +17,8 @@ import { Weapon } from '~/types/Weapon'
 
 export default {
 	name: 'WeaponIndex',
-	async asyncData({ $content, params }: Context) {
+	async asyncData ({ $content, params }: Context) {
 		const skins: Weapon[] = await $content('weapons', params.weapon, { deep: true }).fetch()
-		console.log(skins)
 
 		return {
 			current: params.weapon,

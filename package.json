@@ -10,7 +10,8 @@
     "serve": "nuxt-ts serve",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style"
+    "lint": "yarn lint:js && yarn lint:style",
+    "lint:fix": "yarn lint:js --fix && yarn lint:style --fix"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -27,14 +28,14 @@
     "@nuxtjs/axios": "^5.12",
     "@nuxtjs/dotenv": "^1.4",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/strapi": "^0.1",
     "@nuxtjs/svg": "^0.1",
     "nuxt": "^2.13",
     "nuxt-i18n": "^6.13"
   },
   "devDependencies": {
     "@nuxt/types": "^2.13",
-    "@nuxt/typescript-build": "^2.0.0",
-    "@nuxtjs/eslint-config": "^3.0",
+    "@nuxt/typescript-build": "^2.0",
     "@nuxtjs/eslint-config-typescript": "^2.0",
     "@nuxtjs/eslint-module": "^2.0",
     "@nuxtjs/stylelint-module": "^4.0",
@@ -43,12 +44,14 @@
     "eslint": "^7.4",
     "eslint-config-prettier": "^6.11",
     "eslint-plugin-nuxt": "^1.0",
-    "eslint-plugin-prettier": "^3.1",
     "husky": "^4.2",
     "lint-staged": "^10.2",
+    "postcss-color-mod-function": "^3.0",
+    "postcss-comment": "^2.0",
+    "postcss-custom-properties": "^9.1",
+    "postcss-nested": "^4.2",
     "prettier": "^2.0",
     "stylelint": "^13.6",
-    "stylelint-config-prettier": "^8.0",
     "stylelint-config-standard": "^20.0"
   }
 }

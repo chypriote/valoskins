@@ -21,7 +21,7 @@ export default {
 		// Doc: https://github.com/nuxt-community/nuxt-tailwindcss
 		'@nuxtjs/tailwindcss',
 	],
-	modules: ['@nuxtjs/dotenv', '@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/svg'],
+	modules: ['@nuxtjs/dotenv', '@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/strapi', '@nuxtjs/svg'],
 	axios: {},
 	/*
 	 ** Content module configuration
@@ -29,8 +29,16 @@ export default {
 	 */
 	content: {},
 	build: {
-		extend(config) {
+		extend (config) {
 			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
+		},
+		postcss: {
+			parser: require('postcss-comment'),
+			plugins: {
+				'postcss-nested': {},
+				'postcss-custom-properties': {},
+				'postcss-color-mod-function': {},
+			},
 		},
 	},
 }

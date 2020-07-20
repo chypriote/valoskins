@@ -48,14 +48,14 @@ import { Weapon } from '~/types/Weapon'
 
 export default Vue.extend({
 	name: 'WeaponSkin',
-	async asyncData({ $content, params }: Context) {
+	async asyncData ({ $content, params }: Context) {
 		const skin: Weapon = await $content(`weapons/${params.weapon}/${params.skin}`).fetch()
-		console.log(skin)
 
 		return { skin, weapon: params.weapon }
 	},
 	computed: {
-		rarity() {
+		rarity () {
+			// @ts-ignore
 			return require(`~/assets/img/tiers/${this.skin.rarity}.jpg`)
 		},
 	},

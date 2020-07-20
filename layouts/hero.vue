@@ -3,9 +3,7 @@
 		<div class="container mx-auto">
 			<navbar />
 			<hero-section />
-			<div class="px-4 md:block">
-				<nuxt />
-			</div>
+			<nuxt />
 		</div>
 	</div>
 </template>

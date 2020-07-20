@@ -1,59 +1,32 @@
 <template>
-	<div class="container">
-		<div>
-			<logo />
-			<h1 class="title">
-				valoskins
-			</h1>
-			<div class="links">
-				<a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer" class="button--green">
-					Documentation
-				</a>
-				<a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer" class="button--grey">
-					GitHub
-				</a>
-			</div>
+	<div class="px-4 md:block">
+		<weapon-types-browser />
+		<div class="flex -mx-4">
+			<section class="w-3/4 px-4">
+				<h2 class="uppercase text-xl">Featured skins</h2>
+				<featured-skins />
+			</section>
+			<aside class="w-1/4 px-4">
+				<div class="w-full">Test</div>
+				<div class="w-full">Test</div>
+			</aside>
 		</div>
 	</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+import { Context } from '@nuxt/types'
+import WeaponTypesBrowser from '~/components/WeaponTypesBrowser/WeaponTypesBrowser.vue'
+import FeaturedSkins from '~/components/FeaturedSkins/FeaturedSkins.vue'
 
 export default Vue.extend({
-	components: { Logo },
+	components: { FeaturedSkins, WeaponTypesBrowser },
 	layout: 'hero',
+	async asyncData (ctx: Context & { $strapi: any }) {
+		const skins = await ctx.$strapi.find('skin-collections')
+
+		return { skins }
+	},
 })
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-	margin: 0 auto;
-	min-height: 100vh;
-}
-.title {
-	font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-		Arial, sans-serif;
-	display: block;
-	font-weight: 300;
-	font-size: 100px;
-	color: #35495e;
-	letter-spacing: 1px;
-}
-.subtitle {
-	font-weight: 300;
-	font-size: 42px;
-	color: #526488;
-	word-spacing: 5px;
-	padding-bottom: 15px;
-}
-.links {
-	padding-top: 15px;
-}
-</style>

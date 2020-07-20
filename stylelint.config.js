@@ -1,16 +1,10 @@
 module.exports = {
-	extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+	extends: 'stylelint-config-standard',
 	rules: {
 		'at-rule-empty-line-before': [
 			'always',
 			{
-				except: [
-					'after-same-name',
-					'inside-block',
-					'blockless-after-same-name-blockless',
-					'blockless-after-blockless',
-					'first-nested',
-				],
+				except: ['after-same-name', 'inside-block', 'blockless-after-same-name-blockless', 'blockless-after-blockless', 'first-nested'],
 			},
 		],
 		'block-opening-brace-space-after': 'never-single-line',

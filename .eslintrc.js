@@ -10,10 +10,8 @@ module.exports = {
 		'prettier/vue',
 		'@nuxtjs/eslint-config-typescript',
 		'plugin:vue/strongly-recommended',
-		'plugin:prettier/recommended',
 		'plugin:nuxt/recommended',
 	],
-	plugins: ['prettier'],
 	globals: {
 		rgea: true,
 	},
@@ -36,6 +34,7 @@ module.exports = {
 		'no-return-assign': 'error',
 		'no-tab': 'off',
 		'no-tabs': 'off',
+		'number-leading-zero': 'off',
 		'object-curly-spacing': ['error', 'always'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'never'],
