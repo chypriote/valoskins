@@ -1,4 +1,8 @@
 {
   "title": "Phantom",
-  "name": "Phantom"
+  "name": "Phantom",
+  "slug": "phantom",
+  "type": {
+      "name": "Rifle"
+  }
 }

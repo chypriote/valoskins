@@ -5,5 +5,8 @@
   "pack": "Kingdom",
   "price": "1200",
   "unlockable": true,
-  "rarity": "ultra"
+  "rarity": "ultra",
+  "weapon": {
+    "name": "Phantom"
+  }
 }
