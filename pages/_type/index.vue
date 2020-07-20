@@ -1,6 +1,7 @@
 <template>
 	<div>
-		{{ collection }}
+		Weapon Type
+		{{ weaponType }}
 	</div>
 </template>
 
@@ -9,9 +10,9 @@ import { Context } from '@nuxt/types'
 
 export default {
 	async asyncData ({ $strapi, params }: Context) {
-		const collection = await $strapi.find('weapon-types', { slug: params.slug })
+		const weaponType = await $strapi.find('weapon-types', { slug: params.type })
 
-		return { collection: collection.pop() }
+		return { weaponType: weaponType.pop() }
 	},
 	data: () => ({}),
 	computed: {},

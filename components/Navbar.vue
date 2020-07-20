@@ -1,5 +1,5 @@
 <template>
-	<div id="navbar">
+	<div id="navbar" class="container mx-auto">
 		<header class="py-4 px-4 flex justify-between items-center select-none">
 			<div class="text-2xl font-semibold flex justify-between items-center">
 				<a href="/">

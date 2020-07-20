@@ -1,8 +1,8 @@
 <template>
-	<div id="app" class="custom-background bg-gray-100 text-gray-800 border-b-2">
+	<div id="app" class="bg-gray-100 text-gray-800 border-b-2">
+		<navbar />
+		<hero-section />
 		<div class="container mx-auto">
-			<navbar />
-			<hero-section />
 			<nuxt />
 		</div>
 	</div>

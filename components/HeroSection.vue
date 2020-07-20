@@ -1,5 +1,5 @@
 <template>
-	<div class="px-4 md:block mb-4">
+	<div class="px-4 md:block mb-4 bg-blue-100">
 		<div class="pb-8 mt-auto">
 			<div class="text-center">
 				<h1 class="text-2xl md:text-3xl mb-8 mt-16 font-serif max-w-3xl mx-auto">

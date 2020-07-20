@@ -1,4 +1,5 @@
 export enum Rarity {
+	STANDARD = 'standard',
 	SELECT = 'select',
 	DELUXE = 'deluxe',
 	PREMIUM = 'premium',
@@ -15,9 +16,12 @@ export type Weapon = {
 	id: number
 	name: string
 	slug: string
-	weaponType: WeaponType
 	price: number
-	assetName: string
+	weaponType: WeaponType
+	created_at: Date
+	updated_at: Date
+	picture: UploadedPicture
+	weapon_skins: WeaponSkin[]
 }
 
 export type WeaponType = {
