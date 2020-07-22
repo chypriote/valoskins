@@ -1,5 +1,5 @@
 <template>
-	<nuxt-link :to="{ name: 'type-slug', params: { slug: weaponType.slug } }" class="weapon-type">
+	<nuxt-link :to="{ name: 'type', params: { type: weaponType.slug } }" class="weapon-type">
 		<div class="image-wrapper">
 			<img :src="weaponType.picture.url" class="image" :alt="weaponType.name" />
 		</div>
