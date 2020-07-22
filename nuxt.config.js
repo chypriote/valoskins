@@ -1,3 +1,6 @@
+import axios from 'axios'
+require('dotenv').config()
+
 export default {
 	mode: 'universal',
 	target: 'static',
@@ -21,16 +24,15 @@ export default {
 	buildModules: [
 		'@nuxt/typescript-build',
 		'@nuxtjs/stylelint-module',
-		// Doc: https://github.com/nuxt-community/nuxt-tailwindcss
 		'@nuxtjs/tailwindcss',
 	],
-	modules: ['@nuxtjs/dotenv', '@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/strapi', '@nuxtjs/svg'],
-	axios: {},
-	/*
-	 ** Content module configuration
-	 ** See https://content.nuxtjs.org/configuration
-	 */
-	content: {},
+	modules: ['@nuxtjs/dotenv', '@nuxtjs/pwa', '@nuxtjs/strapi', '@nuxtjs/svg'],
+	generate: {
+		async routes () {
+			const weapons = await axios.get(`${process.env.STRAPI_URL}weapons`).then(res => res.data)
+			return weapons.map(weapon => ({ route: `/${weapon.type.slug}/${weapon.slug}` }))
+		},
+	},
 	build: {
 		extend (config) {
 			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
