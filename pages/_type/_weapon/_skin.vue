@@ -31,13 +31,18 @@
 			</div>
 		</section>
 		<aside class="w-1/5 px-2">
-			<div class="bg-white shadow-md">
+			<div class="bg-white shadow-md mb-4">
 				<div class="px-6 py-4">
 					<header>Price</header>
 					<div>{{ skin.price }} <img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-4 ml-1" /></div>
 				</div>
 			</div>
-			<nuxt-link :to="{ name: 'weapon', params: { weapon: weapon } }">Back</nuxt-link>
+			<div class="bg-white shadow-md px-6 py-4">
+				<nuxt-link :to="{ name: 'type-weapon', params: { type: type.slug, weapon: weapon.slug } }">
+					<img :src="weapon.picture.url" class="image" :alt="weapon.name" />
+					Back
+				</nuxt-link>
+			</div>
 		</aside>
 	</div>
 </template>

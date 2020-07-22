@@ -1,6 +1,12 @@
 <template>
 	<div>
 		Weapon Type
+		<div class="flex">
+			<nuxt-link :to="{name: 'type-weapon', params: {type: weaponType.slug, weapon: weapon.slug}}" v-for="weapon in weaponType.weapons" :key="weapon.id">
+				<img :src="weapon.picture.url" :alt="weapon.name" class="w-32" />
+				{{ weapon.name }}
+			</nuxt-link>
+		</div>
 		{{ weaponType }}
 	</div>
 </template>
@@ -14,7 +20,5 @@ export default {
 
 		return { weaponType: weaponType.pop() }
 	},
-	data: () => ({}),
-	computed: {},
 }
 </script>
