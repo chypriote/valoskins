@@ -1,4 +1,3 @@
-import axios from 'axios'
 require('dotenv').config()
 
 export default {
@@ -27,12 +26,6 @@ export default {
 		'@nuxtjs/tailwindcss',
 	],
 	modules: ['@nuxtjs/dotenv', '@nuxtjs/pwa', '@nuxtjs/strapi', '@nuxtjs/svg'],
-	generate: {
-		async routes () {
-			const weapons = await axios.get(`${process.env.STRAPI_URL}weapons`).then(res => res.data)
-			return weapons.map(weapon => ({ route: `/${weapon.type.slug}/${weapon.slug}` }))
-		},
-	},
 	build: {
 		extend (config) {
 			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
