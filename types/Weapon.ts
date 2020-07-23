@@ -53,6 +53,7 @@ export type WeaponSkin = {
 	price: number
 	rarity: Rarity
 	unlockable: boolean
+	available: boolean
 	chromas: SkinChroma[]
 }
 export type SkinChroma = {

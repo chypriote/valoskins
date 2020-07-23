@@ -37,6 +37,7 @@ export default {
 		extend (config) {
 			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
 		},
+		transpile: ['lodash-es'],
 		postcss: {
 			parser: require('postcss-comment'),
 			plugins: {

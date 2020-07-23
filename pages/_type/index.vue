@@ -2,7 +2,7 @@
 	<div>
 		Weapon Type
 		<div class="flex">
-			<nuxt-link :to="{name: 'type-weapon', params: {type: weaponType.slug, weapon: weapon.slug}}" v-for="weapon in weaponType.weapons" :key="weapon.id">
+			<nuxt-link v-for="weapon in weaponType.weapons" :key="weapon.id" :to="{name: 'type-weapon', params: {type: weaponType.slug, weapon: weapon.slug}}">
 				<img :src="weapon.picture.url" :alt="weapon.name" class="w-32" />
 				{{ weapon.name }}
 			</nuxt-link>

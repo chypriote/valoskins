@@ -14,8 +14,14 @@
 					</div>
 				</div>
 				<div class="w-2/3 px-4">
-					<h1>Available skins</h1>
-					<weapon-skin v-for="skin in weapon.weapon_skins" :key="skin.id" :skin="skin" />
+					<div class="mb-4">
+						<h1>Available skins</h1>
+						<weapon-skin v-for="skin in skins" :key="skin.id" :skin="skin" />
+					</div>
+					<div class="mb-4">
+						<h1>Unavailable skins</h1>
+						<weapon-skin v-for="skin in unavailables" :key="skin.id" :skin="skin" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -25,7 +31,8 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Context } from '@nuxt/types/app'
-import { Weapon, WeaponType } from '~/types/Weapon'
+import { partition } from 'lodash-es'
+import { Weapon, WeaponType, WeaponSkin as Skin } from '~/types/Weapon'
 import Breadcrumb from '~/components/Breadcrumb.vue'
 import WeaponSkin from '~/components/WeaponSkin.vue'
 
@@ -40,10 +47,13 @@ export default Vue.extend({
 
 		const type = types.shift()
 		const weapon = weapons.shift()
+		const [skins, unavailables] = partition(weapon?.weapon_skins, (skin: Skin) => skin.available)
 
 		return {
 			weapon,
 			type,
+			skins,
+			unavailables,
 			crumbs: [
 				{ name: 'index', title: 'home' },
 				{ name: 'type', title: type?.name, params: { type: type?.slug } },
