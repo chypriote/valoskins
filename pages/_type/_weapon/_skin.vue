@@ -53,6 +53,11 @@ import { Context } from '@nuxt/types/app'
 import { Rarity, Weapon, WeaponSkin, WeaponType } from '~/types/Weapon'
 import Breadcrumb from '~/components/Breadcrumb.vue'
 
+interface IData {
+	skin: WeaponSkin|null
+	Rarity: typeof Rarity
+}
+
 export default Vue.extend({
 	name: 'WeaponSkin',
 	components: { Breadcrumb },
@@ -78,10 +83,25 @@ export default Vue.extend({
 			],
 		}
 	},
-	data: () => ({ Rarity }),
+	data: (): IData => ({ Rarity, skin: null }),
 	computed: {
-		// @ts-ignore
-		rarity_icon () { return require(`~/assets/img/tiers/${this.skin.rarity}.png`) },
+		rarity_icon () { return require(`~/assets/img/tiers/${this.skin?.rarity}.png`) },
+	},
+	head () {
+		const title: string = this.skin?.name || ''
+
+		return {
+			title,
+			meta: [
+				{ hid: 'og:title', property: 'og:title', content: title },
+				{ hid: 'og:image', property: 'og:image', content: this.skin?.picture.url || '' },
+				{ hid: 'twitter:title', property: 'twitter:title', content: title },
+				{ hid: 'twitter:image', property: 'twitter:image', content: this.skin?.picture.url || '' },
+			],
+			link: [
+				{ hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}${this.$route.path}` },
+			],
+		}
 	},
 })
 </script>

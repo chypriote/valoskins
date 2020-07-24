@@ -54,6 +54,7 @@ export type WeaponSkin = {
 	rarity: Rarity
 	unlockable: boolean
 	available: boolean
+	picture: UploadedPicture
 	chromas: SkinChroma[]
 }
 export type SkinChroma = {

@@ -36,6 +36,10 @@ import { Weapon, WeaponType, WeaponSkin as Skin } from '~/types/Weapon'
 import Breadcrumb from '~/components/Breadcrumb.vue'
 import WeaponSkin from '~/components/WeaponSkin.vue'
 
+interface IData {
+	weapon: Weapon|null
+}
+
 export default Vue.extend({
 	name: 'WeaponIndex',
 	components: { Breadcrumb, WeaponSkin },
@@ -57,6 +61,23 @@ export default Vue.extend({
 			crumbs: [
 				{ name: 'index', title: 'home' },
 				{ name: 'type', title: type?.name, params: { type: type?.slug } },
+			],
+		}
+	},
+	data: (): IData => ({ weapon: null }),
+	head () {
+		const title: string = this.weapon?.name || ''
+
+		return {
+			title,
+			meta: [
+				{ hid: 'og:title', property: 'og:title', content: title },
+				{ hid: 'og:image', property: 'og:image', content: this.weapon?.picture.url || '' },
+				{ hid: 'twitter:title', property: 'twitter:title', content: title },
+				{ hid: 'twitter:image', property: 'twitter:image', content: this.weapon?.picture.url || '' },
+			],
+			link: [
+				{ hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}${this.$route.path}` },
 			],
 		}
 	},

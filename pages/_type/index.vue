@@ -12,13 +12,36 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { Context } from '@nuxt/types'
+import { WeaponType } from '~/types/Weapon'
 
-export default {
+interface IData {
+	weaponType: WeaponType|null
+}
+
+export default Vue.extend({
 	async asyncData ({ $strapi, params }: Context) {
-		const weaponType = await $strapi.find('weapon-types', { slug: params.type })
+		const weaponType: WeaponType[] = await $strapi.find('weapon-types', { slug: params.type })
 
 		return { weaponType: weaponType.pop() }
 	},
-}
+	data: (): IData => ({ weaponType: null }),
+	head () {
+		const title: string = this.weaponType?.name || ''
+
+		return {
+			title,
+			meta: [
+				{ hid: 'og:title', property: 'og:title', content: title },
+				{ hid: 'og:image', property: 'og:image', content: this.weaponType?.picture.url || '' },
+				{ hid: 'twitter:title', property: 'twitter:title', content: title },
+				{ hid: 'twitter:image', property: 'twitter:image', content: this.weaponType?.picture.url || '' },
+			],
+			link: [
+				{ hid: 'canonical', rel: 'canonical', href: `${process.env.BASE_URL}${this.$route.path}` },
+			],
+		}
+	},
+})
 </script>
