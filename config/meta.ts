@@ -22,8 +22,8 @@ const defaultOptions: IOptions = {
 	icon: `${process.env.BASE_URL}icon.png`,
 }
 
-export const head = (options = defaultOptions) => ({
-	titleTemplate: (titleChunk: string) => titleChunk ? `${titleChunk} - ${options.site_name}` : `${options.site_name}`,
+const getHead = (options: IOptions) => ({
+	titleTemplate: (titleChunk: string) => titleChunk ? `${titleChunk} - ${process.env.site_name}` : `${process.env.site_name}`,
 	htmlAttrs: {
 		lang: options.lang,
 	},
@@ -36,7 +36,7 @@ export const head = (options = defaultOptions) => ({
 
 		{ hid: 'description', name: 'description', content: options.description },
 
-		{ hid: 'og:title', name: 'og:title', property: 'og:title', template: (titleChunk: string) => titleChunk ? `${titleChunk} - ${options.site_name}` : `${options.site_name}` },
+		{ hid: 'og:title', name: 'og:title', property: 'og:title', template: (titleChunk: string) => titleChunk ? `${titleChunk} - ${process.env.site_name}` : `${process.env.site_name}` },
 		{ hid: 'og:site_name', name: 'og:site_name', property: 'og:site_name', content: options.site_name },
 		{ hid: 'og:image', name: 'og:image', property: 'og:image', content: options.icon },
 		{ hid: 'og:type', name: 'og:type', property: 'og:type', content: 'website' },
@@ -47,7 +47,7 @@ export const head = (options = defaultOptions) => ({
 		{ hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary' },
 		{ hid: 'twitter:site', name: 'twitter:site', property: 'twitter:site', content: options.author },
 		{ hid: 'twitter:creator', name: 'twitter:creator', property: 'twitter:creator', content: options.author },
-		{ hid: 'twitter:title', name: 'twitter:title', property: 'twitter:title', template: (titleChunk: string) => titleChunk ? `${titleChunk} - ${options.site_name}` : `${options.site_name}` },
+		{ hid: 'twitter:title', name: 'twitter:title', property: 'twitter:title', template: (titleChunk: string) => titleChunk ? `${titleChunk} - ${process.env.site_name}` : `${process.env.site_name}` },
 		{ hid: 'twitter:description', name: 'twitter:description', property: 'twitter:description', content: options.description },
 		{ hid: 'twitter:image', name: 'twitter:image', property: 'twitter:image', content: options.icon },
 	],
@@ -57,8 +57,9 @@ export const head = (options = defaultOptions) => ({
 		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 	],
 })
+export const head = getHead(defaultOptions)
 
-export const pwa = (options = defaultOptions) => ({
+const getPwa = (options: IOptions) => ({
 	meta: {
 		name: options.site_name,
 		author: options.author,
@@ -80,3 +81,5 @@ export const pwa = (options = defaultOptions) => ({
 		display: 'standalone',
 	},
 })
+
+export const pwa = getPwa(defaultOptions)
