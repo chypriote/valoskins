@@ -2,7 +2,7 @@
 	<div class="">
 		<header class="bg-blue-200">
 			<div class="container mx-auto flex flex-col justify-center pt-10 pb-8">
-				<breadcrumb :crumbs="crumbs" />
+				<breadcrumb :crumbs="crumbs" class="text-white uppercase font-bold" />
 				<h1 class="text-6xl text-white uppercase font-rajdhani font-bold leading-none">{{ weapon.name }}</h1>
 			</div>
 		</header>

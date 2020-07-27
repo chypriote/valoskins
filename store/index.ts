@@ -2,6 +2,7 @@ import { ActionTree, MutationTree, GetterTree } from 'vuex'
 import { SkinCollection, Weapon, WeaponSkin, WeaponType } from '~/types/Weapon'
 
 interface IState {
+	vpPrice: number
 	weaponTypes: WeaponType[]
 	weapons: Weapon[]
 	collections: SkinCollection[]
@@ -9,6 +10,7 @@ interface IState {
 }
 
 export const state = (): IState => ({
+	vpPrice: 500 / 549,
 	weaponTypes: [],
 	weapons: [],
 	collections: [],

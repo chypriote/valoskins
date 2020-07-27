@@ -1,5 +1,5 @@
 <template>
-	<div class="text-white uppercase font-bold">
+	<div>
 		<template v-for="(crumb, index) in crumbs">
 			<nuxt-link
 				:key="`link-${index}`"

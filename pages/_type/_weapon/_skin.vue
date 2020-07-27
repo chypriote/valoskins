@@ -2,21 +2,22 @@
 	<div class="container mx-auto">
 		<div class="flex -mx-2">
 			<section class="w-3/4 px-2">
-				<div class="overflow-hidden bg-white shadow-md mb-4">
-					<breadcrumb :crumbs="crumbs" />
-					<img
-						class="w-full"
-						:src="skin.picture.url"
-						:alt="skin.name"
-					/>
+				<breadcrumb :crumbs="crumbs" class="text-black uppercase text-sm" />
+				<div class="overflow-hidden bg-white shadow-md mb-4 flex">
+					<skin-viewbox :skin="skin" :class="upgrades.length ? 'w-3/4' : ''" />
+					<skin-upgrades v-if="upgrades.length" :upgrades="upgrades" class="w-1/4" />
+				</div>
+
+				<div class="overflow-hidden bg-white shadow-md mb-4 flex">
 					{{ skin.price }}<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-4 ml-1" />
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2">{{ skin.name }}</div>
 						<p class="text-gray-700 text-base">
-							{{ skin }}
+							{{ skin.name }}
 						</p>
 					</div>
 				</div>
+
 				<div class="flex -mx-2">
 					<div class="w-1/2 px-2">
 						<div class="bg-white shadow-md px-6 py-4">
@@ -26,24 +27,21 @@
 					<div class="w-1/2 px-2">
 						<div class="bg-white shadow-md px-6 py-4">
 							<img v-if="skin.rarity !== Rarity.STANDARD" :src="rarity_icon" :alt="skin.rarity" :title="skin.rarity" />
-							{{ skin.price }}
+							{{ skin.price }} ({{ euro }}€)
 							<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-8" />
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<aside class="w-1/4 px-2">
-				<div>
-					<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins in collection</header>
-					<div class="bg-gray-200 shadow-md mb-4">
-						<related-skin v-for="item in skinsInCollection" :key="item.id" :skin="item" class="hover:bg-white transition-colors delay-200" />
-					</div>
+				<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins in collection</header>
+				<div class="bg-gray-200 shadow-md mb-4">
+					<related-skin v-for="item in skinsInCollection" :key="item.id" :skin="item" class="hover:bg-white transition-colors delay-200 ease-linear" />
 				</div>
-				<div>
-					<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins for {{ weapon.name }}</header>
-					<div class="bg-gray-200 shadow-md mb-4">
-						<related-skin v-for="item in skinsForWeapon" :key="item.id" :skin="item" class="hover:bg-white transition-colors delay-200" />
-					</div>
+				<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins for {{ weapon.name }}</header>
+				<div class="bg-gray-200 shadow-md mb-4">
+					<related-skin v-for="item in skinsForWeapon" :key="item.id" :skin="item" class="hover:bg-white transition-colors delay-200 ease-linear" />
 				</div>
 				<div>
 					<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">{{ type.name }}</header>
@@ -52,7 +50,7 @@
 							v-for="item in type.weapons"
 							:key="item.id"
 							:to="{name: 'type-weapon', params: { type: type.slug, weapon: item.slug } }"
-							class="px-4 py-2 flex hover:bg-white transition-colors delay-200 items-center">
+							class="px-4 py-2 flex hover:bg-white transition-colors delay-200 ease-linear items-center">
 							<img :src="item.picture.formats.thumbnail.url" :alt="item.name" class="mr-2 w-20" />
 							<p>{{ item.name }}</p>
 						</nuxt-link>
@@ -65,9 +63,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapState } from 'vuex'
 import { Context } from '@nuxt/types/app'
-import { Rarity, SkinCollection, Weapon, WeaponSkin, WeaponType } from '~/types/Weapon'
+import { orderBy } from 'lodash-es'
+import { Rarity, SkinCollection, SkinUpgrade, Weapon, WeaponSkin, WeaponType } from '~/types/Weapon'
 import Breadcrumb from '~/components/Breadcrumb.vue'
+import SkinUpgrades from '~/components/SkinPage/SkinUpgrades.vue'
+import SkinViewbox from '~/components/SkinPage/SkinViewbox.vue'
 import RelatedSkin from '~/components/SkinPage/RelatedSkin.vue'
 
 interface IData {
@@ -80,7 +82,7 @@ interface IData {
 
 export default Vue.extend({
 	name: 'WeaponSkin',
-	components: { RelatedSkin, Breadcrumb },
+	components: { SkinViewbox, SkinUpgrades, Breadcrumb, RelatedSkin },
 	async asyncData ({ store, params }: Context) {
 		const [type, weapon, skin]: [WeaponType, Weapon, WeaponSkin] = await Promise.all([
 			store.getters.type(params.type),
@@ -103,9 +105,14 @@ export default Vue.extend({
 	},
 	data: (): IData => ({ Rarity }),
 	computed: {
+		...mapState({
+			vpPrice: 'vpPrice',
+		}),
 		skinsInCollection (): WeaponSkin[] { return this.collection?.weapon_skins.filter(item => item.id !== this.skin?.id) || [] },
 		skinsForWeapon (): WeaponSkin[] { return this.weapon?.weapon_skins.filter(item => item.id !== this.skin?.id && item.available) || [] },
 		rarity_icon () { return require(`~/assets/img/tiers/${this.skin?.rarity}.png`) },
+		upgrades (): SkinUpgrade[] { return orderBy(this.skin?.skin_upgrades, 'level', 'asc') },
+		euro () { return this.skin?.price ? Math.round(this.skin.price * this.vpPrice) / 100 : 0 },
 	},
 	head () {
 		const title: string = this.skin?.name || ''
