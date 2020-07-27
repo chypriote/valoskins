@@ -29,7 +29,6 @@ export default Vue.extend({
 	data: (): IData => ({ weaponType: null }),
 	head () {
 		const title: string = this.weaponType?.name || ''
-		console.log(title)
 		return {
 			title,
 			meta: [

@@ -12,12 +12,20 @@ export enum Unlocks {
 	OTHER = 'other'
 }
 
+export enum Upgrade {
+	VISUALS = 'visuals',
+	ANIMATION = 'animation',
+	FINITION = 'finition',
+	CHROMA = 'chroma',
+}
+
 export type Weapon = {
 	id: number
 	name: string
 	slug: string
 	price: number
 	weaponType: WeaponType
+	type: WeaponType
 	created_at: Date
 	updated_at: Date
 	picture: UploadedPicture
@@ -55,11 +63,18 @@ export type WeaponSkin = {
 	unlockable: boolean
 	available: boolean
 	picture: UploadedPicture
-	chromas: SkinChroma[]
+	skin_upgrades: SkinUpgrade[]
+	skin_collection: SkinCollection
 }
-export type SkinChroma = {
+export type SkinUpgrade = {
+	id: number
 	skin: WeaponSkin
 	name: string
+	cost: number
+	type: Upgrade
+	media: UploadedPicture
+	level: number
+	displayText: string
 }
 
 export type SkinPack = {
@@ -88,4 +103,13 @@ export type BattlePass = {
 	name: string
 	tiers: number
 	skins: WeaponSkin[]
+}
+
+export type SkinCollection = {
+	id: number
+	weapon_skins: WeaponSkin[]
+	name: string
+	added: Date
+	slug: string
+	picture: UploadedPicture
 }

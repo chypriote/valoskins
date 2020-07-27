@@ -16,19 +16,18 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapState } from 'vuex'
 import WeaponTypesBrowser from '~/components/WeaponTypesBrowser/WeaponTypesBrowser.vue'
 import FeaturedSkins from '~/components/FeaturedSkins/FeaturedSkins.vue'
 
 export default Vue.extend({
 	components: { FeaturedSkins, WeaponTypesBrowser },
 	layout: 'hero',
-	async asyncData ({ $strapi }) {
-		const [skins, types] = await Promise.all([
-			$strapi.find('skin-collections'),
-			$strapi.find('weapon-types'),
-		])
-
-		return { skins, types }
+	computed: {
+		...mapState({
+			collections: 'collections',
+			types: 'weaponTypes',
+		}),
 	},
 })
 </script>

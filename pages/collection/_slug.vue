@@ -8,10 +8,10 @@
 import { Context } from '@nuxt/types'
 
 export default {
-	async asyncData ({ $strapi, params }: Context & { $strapi: any }) {
-		const collection = await $strapi.find('skin-collections', { slug: params.slug })
+	async asyncData ({ store, params }: Context) {
+		const collection = await store.getters.collection(params.slug)
 
-		return { collection: collection.pop() }
+		return { collection }
 	},
 	data: () => ({}),
 	computed: {},
