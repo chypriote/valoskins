@@ -10,7 +10,9 @@ export default {
 	head,
 	pwa,
 	css: ['~/assets/css/app.css'],
-	plugins: [],
+	plugins: [
+		'~/plugins/filters',
+	],
 	buildModules: [
 		'@nuxt/typescript-build',
 		'@nuxtjs/stylelint-module',

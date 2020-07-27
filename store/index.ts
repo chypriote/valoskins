@@ -3,6 +3,7 @@ import { SkinCollection, Weapon, WeaponSkin, WeaponType } from '~/types/Weapon'
 
 interface IState {
 	vpPrice: number
+	radPrice: number
 	weaponTypes: WeaponType[]
 	weapons: Weapon[]
 	collections: SkinCollection[]
@@ -10,7 +11,8 @@ interface IState {
 }
 
 export const state = (): IState => ({
-	vpPrice: 500 / 549,
+	vpPrice: 549 / 500, // 500 VP for 549 Euros ct ====> 1.1ct le VP
+	radPrice: 1600 / 20, // 20 RP for 1600 VP ====> 80VP le RadPoint
 	weaponTypes: [],
 	weapons: [],
 	collections: [],
@@ -23,6 +25,8 @@ export const getters: GetterTree<IState, IState> = {
 	type: state => (id: number|string) => state.weaponTypes.find(item => item.id === id || item.slug === id),
 	collection: state => (id: number|string) => state.collections.find(item => item.id === id || item.slug === id),
 	skin: state => (id: number|string) => state.skins.find(item => item.id === id || item.slug === id),
+	vpPriceinEuro: state => (price: number) => price * state.vpPrice * 100,
+	radPriceinEuro: state => (price: number) => price * state.vpPrice * 100 * state.radPrice,
 }
 
 export const mutations: MutationTree<IState> = {

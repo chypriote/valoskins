@@ -17,21 +17,6 @@
 						</p>
 					</div>
 				</div>
-
-				<div class="flex -mx-2">
-					<div class="w-1/2 px-2">
-						<div class="bg-white shadow-md px-6 py-4">
-							Pack/unlock
-						</div>
-					</div>
-					<div class="w-1/2 px-2">
-						<div class="bg-white shadow-md px-6 py-4">
-							<img v-if="skin.rarity !== Rarity.STANDARD" :src="rarity_icon" :alt="skin.rarity" :title="skin.rarity" />
-							{{ skin.price }} ({{ euro }}€)
-							<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-8" />
-						</div>
-					</div>
-				</div>
 			</section>
 
 			<aside class="w-1/4 px-2">
