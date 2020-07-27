@@ -1,14 +1,20 @@
 <template>
 	<div class="flex-1 px-4 py-2">
-		<div class="flex content-between">
+		<div class="flex justify-between">
 			<div class="flex flex-col">
 				<div class="font-bold text-xl mb-2">{{ skin.name }}</div>
-				<div class="flex leading-none text-sm text-gray-500">
-					<img v-if="skin.rarity !== Rarity.STANDARD" :src="rarity_icon" :alt="skin.rarity" :title="skin.rarity" class="mr-2 w-4" />
+			</div>
+			<div class="flex flex-col">
+				<!-- Rarity -->
+				<div class="flex text-gray-500 items-center">
+					<img v-if="skin.rarity !== Rarity.STANDARD" :src="rarity_icon" :alt="skin.rarity" :title="skin.rarity" class="mr-1 h-4 w-auto" />
 					<p>{{ skin.rarity |capitalize }}</p>
 				</div>
+				<!-- Upgradable -->
+				<div v-if="skin.skin_upgrades.length" class="flex text-gray-500">
+					<p>{{ 'Upgradable' }}</p>
+				</div>
 			</div>
-			<div class="prices"></div>
 		</div>
 		<div class="flex flex-col justify-center">
 			<div class="mx-auto">

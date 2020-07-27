@@ -33,15 +33,15 @@
     "@nuxtjs/tailwindcss": "^2.1",
     "@types/lodash-es": "^4.17",
     "lodash-es": "^4.17",
-    "nuxt": "^2.13",
+    "nuxt": "^2.14",
     "postcss-color-mod-function": "^3.0",
     "postcss-comment": "^2.0",
     "postcss-custom-properties": "^9.1",
     "postcss-nested": "^4.2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.13",
-    "@nuxtjs/eslint-config-typescript": "^2.0",
+    "@nuxt/types": "^2.14",
+    "@nuxtjs/eslint-config-typescript": "^3.0",
     "@nuxtjs/eslint-module": "^2.0",
     "babel-eslint": "^10.1",
     "eslint": "^7.5",

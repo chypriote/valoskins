@@ -8,8 +8,17 @@
 					<skin-upgrades v-if="upgrades.length" :upgrades="upgrades" class="w-1/4" />
 				</div>
 
-				<div class="overflow-hidden bg-white shadow-md mb-4 flex">
-					{{ skin.price }}<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-4 ml-1" />
+				<div class="overflow-hidden bg-white shadow-md mb-4 flex flex-col px-4 py-2">
+					<div class="font-bold text-xl mb-2">Prices</div>
+					<div class="flex items-center">
+						<p class="text-xl leading-none">{{ skin.price }}</p>
+						<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-5 h-5 ml-1" />
+					</div>
+					<div class="flex items-center">
+						<p class="text-xl leading-none">~{{ roundedPrice(skin.price / vpPrice) }} €</p>
+						<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-5 h-5 ml-1" />
+					</div>
+
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2">{{ skin.name }}</div>
 						<p class="text-gray-700 text-base">
@@ -97,7 +106,9 @@ export default Vue.extend({
 		skinsForWeapon (): WeaponSkin[] { return this.weapon?.weapon_skins.filter(item => item.id !== this.skin?.id && item.available) || [] },
 		rarity_icon () { return require(`~/assets/img/tiers/${this.skin?.rarity}.png`) },
 		upgrades (): SkinUpgrade[] { return orderBy(this.skin?.skin_upgrades, 'level', 'asc') },
-		euro () { return this.skin?.price ? Math.round(this.skin.price * this.vpPrice) / 100 : 0 },
+	},
+	methods: {
+		roundedPrice (cost: number) { return Math.floor(cost * 100) / 100 },
 	},
 	head () {
 		const title: string = this.skin?.name || ''
