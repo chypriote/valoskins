@@ -46,16 +46,24 @@ export const mutations: MutationTree<IState> = {
 
 export const actions: ActionTree<IState, IState> = {
 	async FETCH_WEAPON_TYPES ({ commit }) {
-		commit('SET_WEAPON_TYPES', await this.$strapi.find('weapon-types'))
+		try {
+			commit('SET_WEAPON_TYPES', await this.$strapi.find('weapon-types'))
+		} catch (e) {	}
 	},
 	async FETCH_WEAPONS ({ commit }) {
-		commit('SET_WEAPONS', await this.$strapi.find('weapons'))
+		try {
+			commit('SET_WEAPONS', await this.$strapi.find('weapons'))
+		} catch (e) {	}
 	},
 	async FETCH_COLLECTIONS ({ commit }) {
-		commit('SET_COLLECTIONS', await this.$strapi.find('skin-collections'))
+		try {
+			commit('SET_COLLECTIONS', await this.$strapi.find('skin-collections'))
+		} catch (e) {	}
 	},
 	async FETCH_SKINS ({ commit }) {
-		commit('SET_SKINS', await this.$strapi.find('weapon-skins'))
+		try {
+			commit('SET_SKINS', await this.$strapi.find('weapon-skins'))
+		} catch (e) {	}
 	},
 
 	async nuxtServerInit ({ dispatch }) {
