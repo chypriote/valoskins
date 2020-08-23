@@ -9,6 +9,9 @@ export default {
 	telemetry: false,
 	head,
 	pwa,
+	generate: {
+		interval: 100,
+	},
 	css: ['~/assets/css/app.css'],
 	plugins: [
 		'~/plugins/filters',
