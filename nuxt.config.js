@@ -10,7 +10,7 @@ export default {
 	head,
 	pwa,
 	generate: {
-		interval: 100,
+		interval: 1000,
 	},
 	css: ['~/assets/css/app.css'],
 	plugins: [
