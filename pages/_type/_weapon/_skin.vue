@@ -15,8 +15,7 @@
 						<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-5 h-5 ml-1" />
 					</div>
 					<div class="flex items-center">
-						<p class="text-xl leading-none">~{{ roundedPrice(skin.price / vpPrice) }} €</p>
-						<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-5 h-5 ml-1" />
+						<p class="text-xl leading-none">~{{ roundedPrice(skin.price * vpPrice) }} €</p>
 					</div>
 
 					<div class="px-6 py-4">
@@ -109,7 +108,7 @@ export default Vue.extend({
 		upgrades (): SkinUpgrade[] { return orderBy(this.skin?.skin_upgrades, 'level', 'asc') },
 	},
 	methods: {
-		roundedPrice (cost: number) { return Math.floor(cost * 100) / 100 },
+		roundedPrice (cost: number): number { return Math.floor(cost * 100) / 100 },
 	},
 	head () {
 		const title: string = this.skin?.name || ''

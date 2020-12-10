@@ -10,7 +10,5 @@ import FeaturedSkin from '~/components/FeaturedSkins/FeaturedSkin'
 
 export default {
 	components: { FeaturedSkin },
-	data: () => ({}),
-	computed: {},
 }
 </script>

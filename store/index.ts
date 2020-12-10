@@ -11,7 +11,7 @@ interface IState {
 }
 
 export const state = (): IState => ({
-	vpPrice: 549 / 500, // 500 VP for 549 Euros ct ====> 1.1ct le VP
+	vpPrice: 5.49 / 500, // 500 VP for 549 Euros ct ====> 0,01098ct le VP
 	radPrice: 1600 / 20, // 20 RP for 1600 VP ====> 80VP le RadPoint
 	weaponTypes: [],
 	weapons: [],
