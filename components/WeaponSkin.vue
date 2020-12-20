@@ -1,20 +1,21 @@
 <template>
-	<div class="border border-gray-600 py-4 px-2 flex items-center">
-		<div class="flex items-center px-4">
-			<img :src="skin.picture.url" :alt="skin.name" class="w-32" />
-		</div>
-		<nuxt-link :to="{ name: 'type-weapon-skin', params: { type: type, weapon: weapon, skin: skin.slug }}" class="flex-1">
-			{{ skin.name }}
-		</nuxt-link>
-		<div class="flex items-center px-4">
+	<nuxt-link :to="{ name: 'type-weapon-skin', params: { type: type, weapon: weapon, skin: skin.slug }}" class="skin-tile">
+		<div class="skin-rarity hint--top" :aria-label="skin.rarity">
 			<img v-if="skin.rarity !== Rarity.STANDARD"
 				:src="rarity_icon"
 				:alt="skin.rarity"
-				:title="skin.rarity"
-				class="w-8"
+				:aria-label="skin.rarity |ucfirst"
 			/>
 		</div>
-	</div>
+		<img :src="skin.picture.url" :alt="skin.name" class="skin-image" />
+		<div class="skin-infos">
+			<h4 class="skin-name">{{ skin.name }}</h4>
+			<p v-if="skin.price" class="skin-price">
+				{{ skin.price }}
+				<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" />
+			</p>
+		</div>
+	</nuxt-link>
 </template>
 
 <script lang="ts">
@@ -30,11 +31,39 @@ export default Vue.extend({
 	},
 	data: () => ({ Rarity }),
 	computed: {
-		rarity_icon () { return require(`~/assets/img/tiers/${this.skin.rarity}.png`) },
-		// @ts-ignore
-		weapon () { return this.$route.params.weapon },
-		// @ts-ignore
-		type () { return this.$route.params.type },
+		rarity_icon (): string { return require(`~/assets/img/tiers/${this.skin.rarity}.png`) },
+		weapon (): string { return this.$route.params.weapon },
+		type (): string { return this.$route.params.type },
 	},
 })
 </script>
+
+<style scoped>
+.skin-tile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #34164b;
+}
+.skin-rarity {
+	position: absolute;
+	top: .5rem;
+	left: .5rem;
+	img {height: 2rem;}
+}
+.skin-infos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	.skin-name {font-weight: bold;font-size: 1.2rem;}
+}
+.skin-price {
+	display: flex;
+	align-items: center;
+	img {height: 1rem;margin-left: .25rem;}
+}
+</style>

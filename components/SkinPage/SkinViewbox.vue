@@ -8,7 +8,7 @@
 				<!-- Rarity -->
 				<div class="flex text-gray-500 items-center">
 					<img v-if="skin.rarity !== Rarity.STANDARD" :src="rarity_icon" :alt="skin.rarity" :title="skin.rarity" class="mr-1 h-4 w-auto" />
-					<p>{{ skin.rarity |capitalize }}</p>
+					<p>{{ skin.rarity |ucfirst }}</p>
 				</div>
 				<!-- Upgradable -->
 				<div v-if="skin.skin_upgrades.length" class="flex text-gray-500">

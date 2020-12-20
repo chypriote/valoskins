@@ -1,27 +1,21 @@
 <template>
-	<div class="">
+	<div>
 		<header class="bg-blue-200">
-			<div class="container mx-auto flex flex-col justify-center pt-10 pb-8">
-				<breadcrumb :crumbs="crumbs" class="text-white uppercase font-bold" />
+			<div class="container mx-auto flex items-center justify-between pt-10 pb-8">
 				<h1 class="text-6xl text-white uppercase font-rajdhani font-bold leading-none">{{ weapon.name }}</h1>
+				<div class="w-1/3 px-4">
+					<img :src="weapon.picture.url" :alt="weapon.name" class="w-full" />
+				</div>
 			</div>
 		</header>
 		<div class="container mx-auto">
-			<div class="pt-4 flex -mx-4">
-				<div class="w-1/3 px-4">
-					<div class="border border-gray-600 py-8 px-4">
-						<img :src="weapon.picture.url" :alt="weapon.name" class="w-full" />
-					</div>
+			<div class="skins-grid flex flex-wrap -mx-4 pt-4">
+				<div v-for="skin in skins" :key="skin.id" class="skin-cell">
+					<weapon-skin :skin="skin" />
 				</div>
-				<div class="w-2/3 px-4">
-					<div class="mb-4">
-						<h1>Available skins</h1>
-						<weapon-skin v-for="skin in skins" :key="skin.id" :skin="skin" />
-					</div>
-					<div class="mb-4">
-						<h1>Unavailable skins</h1>
-						<weapon-skin v-for="skin in unavailables" :key="skin.id" :skin="skin" />
-					</div>
+				<div class="mb-4">
+					<h1>Unavailable skins</h1>
+					<weapon-skin v-for="skin in unavailables" :key="skin.id" :skin="skin" />
 				</div>
 			</div>
 		</div>
@@ -33,7 +27,6 @@ import Vue from 'vue'
 import { Context } from '@nuxt/types/app'
 import { partition } from 'lodash-es'
 import { Weapon, WeaponType, WeaponSkin as Skin } from '~/types/Weapon'
-import Breadcrumb from '~/components/Breadcrumb.vue'
 import WeaponSkin from '~/components/WeaponSkin.vue'
 
 interface IData {
@@ -42,7 +35,7 @@ interface IData {
 
 export default Vue.extend({
 	name: 'WeaponIndex',
-	components: { Breadcrumb, WeaponSkin },
+	components: { WeaponSkin },
 	async asyncData ({ $strapi, params }: Context) {
 		const [types, weapons]: [WeaponType[], Weapon[]] = await Promise.all([
 			$strapi.find('weapon-types', { slug: params.type }),
@@ -83,3 +76,15 @@ export default Vue.extend({
 	},
 })
 </script>
+
+<style scoped>
+.skins-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem -1rem;
+}
+.skin-cell {
+	width: 25%;
+	padding: 1rem;
+}
+</style>

@@ -12,7 +12,7 @@ export default {
 	generate: {
 		interval: 1000,
 	},
-	css: ['~/assets/css/app.css'],
+	css: ['hint.css', '~/assets/css/app.css'],
 	plugins: [
 		'~/plugins/filters',
 	],
