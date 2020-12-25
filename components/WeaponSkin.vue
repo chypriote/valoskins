@@ -1,13 +1,14 @@
 <template>
 	<nuxt-link :to="{ name: 'type-weapon-skin', params: { type: type, weapon: weapon, skin: skin.slug }}" class="skin-tile">
-		<div class="skin-rarity hint--top" :aria-label="skin.rarity">
+		<div class="skin-rarity hint--top" :aria-label="skin.rarity |ucfirst">
 			<img v-if="skin.rarity !== Rarity.STANDARD"
 				:src="rarity_icon"
-				:alt="skin.rarity"
-				:aria-label="skin.rarity |ucfirst"
+				:alt="skin.rarity |ucfirst"
 			/>
 		</div>
-		<img :src="skin.picture.url" :alt="skin.name" class="skin-image" />
+		<div class="skin-image-wrapper">
+			<img :src="skin.picture.url" :alt="skin.name" class="skin-image" />
+		</div>
 		<div class="skin-infos">
 			<h4 class="skin-name">{{ skin.name }}</h4>
 			<p v-if="skin.price" class="skin-price">
@@ -43,7 +44,7 @@ export default Vue.extend({
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
+	padding: 1.5rem;
 	text-align: center;
 	border-radius: 6px;
 	background-color: #34164b;
@@ -52,8 +53,9 @@ export default Vue.extend({
 	position: absolute;
 	top: .5rem;
 	left: .5rem;
-	img {height: 2rem;}
+	img {height: 1.75rem;}
 }
+.skin-image-wrapper {height: 6rem;}
 .skin-infos {
 	display: flex;
 	justify-content: space-between;

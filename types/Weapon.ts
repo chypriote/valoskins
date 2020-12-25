@@ -8,6 +8,8 @@ export enum Rarity {
 	EXCLUSIVE = 'exclusive',
 }
 
+export const rarityOrder = Object.values(Rarity)
+
 export enum Unlocks {
 	BATTLEPASS = 'battlepass',
 	OTHER = 'other'

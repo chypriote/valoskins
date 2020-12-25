@@ -110,6 +110,7 @@ export default Vue.extend({
 	methods: {
 		roundedPrice (cost: number): number { return Math.floor(cost * 100) / 100 },
 	},
+	// eslint-disable-next-line vue/order-in-components
 	head () {
 		const title: string = this.skin?.name || ''
 

@@ -9,7 +9,13 @@
 			</div>
 		</header>
 		<div class="container mx-auto">
-			<div class="skins-grid flex flex-wrap -mx-4 pt-4">
+			<div class="skins-filter">
+				<input type="text">
+				<select>
+					<option v-for="(rarity, index) in Rarity" :key="`rarity-${index}`" :value="rarity">{{ rarity |ucfirst }}</option>
+				</select>
+			</div>
+			<div class="skins-grid">
 				<div v-for="skin in skins" :key="skin.id" class="skin-cell">
 					<weapon-skin :skin="skin" />
 				</div>
@@ -26,11 +32,15 @@
 import Vue from 'vue'
 import { Context } from '@nuxt/types/app'
 import { partition } from 'lodash-es'
-import { Weapon, WeaponType, WeaponSkin as Skin } from '~/types/Weapon'
+import { Weapon, WeaponType, WeaponSkin as Skin, rarityOrder, Rarity } from '~/types/Weapon'
 import WeaponSkin from '~/components/WeaponSkin.vue'
 
 interface IData {
 	weapon: Weapon|null
+	type?: WeaponType
+	skins: Skin[]
+	unavailables?: Skin[]
+	Rarity: typeof Rarity
 }
 
 export default Vue.extend({
@@ -44,7 +54,7 @@ export default Vue.extend({
 
 		const type = types.shift()
 		const weapon = weapons.shift()
-		const [skins, unavailables] = partition(weapon?.weapon_skins, (skin: Skin) => skin.available)
+		const [skins, unavailables] = partition(weapon?.weapon_skins.sort((a: Skin, b: Skin) => rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity)), (skin: Skin) => skin.available)
 
 		return {
 			weapon,
@@ -57,7 +67,8 @@ export default Vue.extend({
 			],
 		}
 	},
-	data: (): IData => ({ weapon: null }),
+	data: (): IData => ({ weapon: null, skins: [], Rarity }),
+	// eslint-disable-next-line vue/order-in-components
 	head () {
 		const title: string = this.weapon?.name || ''
 
@@ -78,10 +89,14 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.skins-filter {
+	display: flex;
+}
 .skins-grid {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1rem -1rem;
+	padding-top: 1rem;
 }
 .skin-cell {
 	width: 25%;
