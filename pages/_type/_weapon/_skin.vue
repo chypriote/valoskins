@@ -82,7 +82,6 @@ export default Vue.extend({
 			store.getters.weapon(params.weapon),
 			store.getters.weapon_skin(params.weapon, params.skin),
 		])
-		if (!skin) { console.log(skin) }
 		const collection: SkinCollection = await store.getters.collection(skin?.skin_collection.id)
 
 		return {
