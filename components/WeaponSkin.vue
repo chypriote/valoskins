@@ -55,7 +55,10 @@ export default Vue.extend({
 	left: .5rem;
 	img {height: 1.75rem;}
 }
-.skin-image-wrapper {height: 6rem;}
+.skin-image-wrapper {
+	height: 6rem;
+	img {max-height: 100%;}
+}
 .skin-infos {
 	display: flex;
 	justify-content: space-between;

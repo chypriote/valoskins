@@ -99,7 +99,11 @@ export default Vue.extend({
 	padding-top: 1rem;
 }
 .skin-cell {
-	width: 25%;
+	flex-basis: 50%;
 	padding: 1rem;
+	@media (min-width: 576px) {flex-basis: 50%;}
+	@media (min-width: 768px) {flex-basis: 33%;}
+	@media (min-width: 1024px) {flex-basis: 33%;}
+	@media (min-width: 1280px) {flex-basis: 25%;}
 }
 </style>

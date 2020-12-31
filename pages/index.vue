@@ -110,7 +110,7 @@ export default Vue.extend({
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 0;
-	@media (max-width: 991.98px) {flex: 1 1 50%;}
+	@media (max-width: 992px) {flex: 1 1 50%;}
 }
 .weapon-grid-cell {
 	display: flex;
@@ -130,7 +130,7 @@ export default Vue.extend({
 	& > .weapon-grid-cell {
 		flex-basis: 25%;
 		flex-grow: 0;
-		@media (max-width: 991.98px) {flex-basis: 50%;}
+		@media (max-width: 992px) {flex-basis: 50%;}
 	}
 }
 </style>
