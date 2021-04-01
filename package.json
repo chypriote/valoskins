@@ -3,62 +3,56 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build --target static",
-    "generate": "cross-env NODE_ENV=production nuxt-ts generate",
-    "serve": "nuxt-ts serve",
+    "dev": "nuxt",
+    "build": "nuxt build --target static",
+    "generate": "cross-env NODE_ENV=production nuxt generate",
+    "serve": "nuxt serve",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "lint:fix": "yarn lint:js --fix && yarn lint:style --fix"
+    "lint:fix": "yarn lint:js --fix && yarn lint:style --fix",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "*.{css,vue}": "stylelint **/*.{vue,css} --ignore-path .gitignore --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "dependencies": {
-    "@nuxt/typescript-build": "^2.0",
-    "@nuxt/typescript-runtime": "^2.0",
+    "@nuxt/typescript-build": "^2.1",
     "@nuxtjs/dotenv": "^1.4",
     "@nuxtjs/pwa": "^3.3",
-    "@nuxtjs/strapi": "^0.1",
+    "@nuxtjs/strapi": "^0.3",
     "@nuxtjs/stylelint-module": "^4.0",
     "@nuxtjs/svg": "^0.1",
     "@nuxtjs/tailwindcss": "^2.1",
     "@types/lodash-es": "^4.17",
-    "hint.css": "^2.6.0",
-    "hover.css": "^2.3.2",
+    "hint.css": "^2.6",
+    "hover.css": "^2.3",
     "lodash-es": "^4.17",
-    "nuxt": "^2.14",
-    "nuxt-i18n": "^6.16",
+    "nuxt": "^2.15",
+    "nuxt-i18n": "^6.22",
     "postcss-color-mod-function": "^3.0",
     "postcss-comment": "^2.0",
     "postcss-custom-properties": "^9.1",
     "postcss-nested": "^4.2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14",
-    "@nuxt/typescript-build": "^2.0",
+    "@nuxt/types": "^2.15",
+    "@nuxt/typescript-build": "^2.1",
     "@nuxtjs/eslint-config": "^5.0",
     "@nuxtjs/eslint-config-typescript": "^5.0",
     "@nuxtjs/eslint-module": "^3.0",
     "babel-eslint": "^10.1",
     "cross-env": "^7.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.16",
-    "eslint-config-prettier": "^7.1",
+    "cz-conventional-changelog": "^3.3",
+    "eslint": "^7.23",
+    "eslint-config-prettier": "^8.1",
     "eslint-plugin-nuxt": "^2.0",
-    "husky": "^4.3",
+    "husky": "^6.0",
     "lint-staged": "^10.5",
     "prettier": "^2.2",
-    "stylelint": "^13.8",
-    "stylelint-config-standard": "^20.0"
+    "stylelint": "^13.12",
+    "stylelint-config-standard": "^21.0"
   },
   "config": {
     "commitizen": {

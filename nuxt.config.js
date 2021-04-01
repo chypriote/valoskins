@@ -2,7 +2,6 @@ import { head, pwa } from './config/meta'
 require('dotenv').config()
 
 export default {
-	mode: 'universal',
 	target: 'static',
 	globalname: 'valoskins',
 	components: false,
