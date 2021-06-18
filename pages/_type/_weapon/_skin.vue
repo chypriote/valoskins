@@ -76,13 +76,13 @@ interface IData {
 export default Vue.extend({
 	name: 'WeaponSkin',
 	components: { SkinViewbox, SkinUpgrades, Breadcrumb, RelatedSkin },
-	async asyncData ({ store, params }: Context) {
-		const [type, weapon, skin]: [WeaponType, Weapon, WeaponSkin] = await Promise.all([
-			store.getters.type(params.type),
-			store.getters.weapon(params.weapon),
-			store.getters.weapon_skin(params.weapon, params.skin),
+	async asyncData ({ $api, params, $strapi }: Context) {
+		const [type, weapon]: [WeaponType, Weapon] = await Promise.all([
+			$api.getWeaponTypeBySlug(params.type),
+			$api.getWeaponBySlug(params.weapon),
 		])
-		const collection: SkinCollection = await store.getters.collection(skin?.skin_collection.id)
+		const skin: WeaponSkin = await $api.getSkinBySlugAndWeapon(params.skin, weapon.id)
+		const collection: SkinCollection = await $strapi.findOne('skin-collections', skin.skin_collection.id)
 
 		return {
 			weapon,

@@ -15,6 +15,7 @@ export default {
 	css: ['hint.css', '~/assets/css/app.css'],
 	plugins: [
 		'~/plugins/filters',
+		'~/plugins/api',
 	],
 	buildModules: [
 		'@nuxt/typescript-build',

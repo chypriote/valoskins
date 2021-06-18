@@ -6,14 +6,13 @@
 
 <script lang="ts">
 import { Context } from '@nuxt/types'
+import Vue from 'vue'
 
-export default {
-	async asyncData ({ store, params }: Context) {
-		const collection = await store.getters.collection(params.slug)
+export default Vue.extend({
+	async asyncData ({ params, $api }: Context) {
+		const collection = await $api.getSkinCollectionBySlug(params.slug)
 
 		return { collection }
 	},
-	data: () => ({}),
-	computed: {},
-}
+})
 </script>

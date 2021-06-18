@@ -46,14 +46,12 @@ interface IData {
 export default Vue.extend({
 	name: 'WeaponIndex',
 	components: { WeaponSkin },
-	async asyncData ({ $strapi, params }: Context) {
-		const [types, weapons]: [WeaponType[], Weapon[]] = await Promise.all([
-			$strapi.find('weapon-types', { slug: params.type }),
-			$strapi.find('weapons', { slug: params.weapon }),
+	async asyncData ({ $api, params }: Context) {
+		const [type, weapon]: [WeaponType, Weapon] = await Promise.all([
+			$api.getWeaponTypeBySlug(params.type),
+			$api.getWeaponBySlug(params.weapon),
 		])
 
-		const type = types.shift()
-		const weapon = weapons.shift()
 		const [skins, unavailables] = partition(weapon?.weapon_skins.sort((a: Skin, b: Skin) => rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity)), (skin: Skin) => skin.available)
 
 		return {

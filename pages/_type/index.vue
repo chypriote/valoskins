@@ -21,10 +21,10 @@ interface IData {
 }
 
 export default Vue.extend({
-	async asyncData ({ $strapi, params }: Context) {
-		const weaponType: WeaponType[] = await $strapi.find('weapon-types', { slug: params.type })
+	async asyncData ({ $api, params }: Context) {
+		const weaponType: WeaponType = await $api.getWeaponTypeBySlug(params.type)
 
-		return { weaponType: weaponType.pop() }
+		return { weaponType }
 	},
 	data: (): IData => ({ weaponType: null }),
 	head () {
