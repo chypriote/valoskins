@@ -62,7 +62,7 @@ export const actions: ActionTree<IState, IState> = {
 	},
 	async FETCH_SKINS ({ commit }) {
 		try {
-			commit('SET_SKINS', await this.$strapi.find('weapon-skins', { _limit: 200 }))
+			commit('SET_SKINS', await this.$strapi.find('weapon-skins', { _limit: 500 }))
 		} catch (e) {	}
 	},
 
