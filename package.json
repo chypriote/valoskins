@@ -24,7 +24,6 @@
     "@nuxtjs/strapi": "^0.3",
     "@nuxtjs/stylelint-module": "^4.0",
     "@nuxtjs/svg": "^0.1",
-    "@nuxtjs/tailwindcss": "^2.1",
     "@types/lodash-es": "^4.17",
     "hint.css": "^2.6",
     "hover.css": "^2.3",
@@ -33,7 +32,8 @@
     "nuxt-i18n": "^6.27",
     "postcss-color-mod-function": "^3.0",
     "postcss-comment": "^2.0",
-    "postcss-custom-properties": "^9.1",
+    "postcss-custom-media": "^7.0",
+    "postcss-custom-properties": "^9.2",
     "postcss-nested": "^4.2"
   },
   "devDependencies": {

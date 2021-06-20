@@ -1,5 +1,5 @@
 <template>
-	<nuxt-link :to="{name: 'type-weapon-skin', params: { type: type.slug, weapon: weapon.slug, skin: skin.slug }}" class="px-4 py-2 flex items-center">
+	<nuxt-link :to="{name: 'weapon-skin', params: { weapon: weapon.slug, skin: skin.slug }}" class="related-skin">
 		<img :src="skin.picture.formats.thumbnail.url" :alt="skin.name" class="mr-2  w-16" />
 		<p class="flex-1">{{ skin.name }}</p>
 		<img v-if="skin.rarity !== Rarity.STANDARD" :src="rarity_icon" :alt="skin.rarity" :title="skin.rarity" class="w-6" />
@@ -36,3 +36,13 @@ export default Vue.extend({
 	},
 })
 </script>
+
+<style scoped>
+.related-skin {
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	border: 1px solid #d4d1cb;
+	border-radius: 2px;
+}
+</style>

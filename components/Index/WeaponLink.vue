@@ -1,5 +1,5 @@
 <template>
-	<nuxt-link class="weapon-link" :to="{name: 'type-weapon', params: { type: type, weapon: weapon.slug } }">
+	<nuxt-link class="weapon-link" :to="{name: 'weapon', params: { weapon: weapon.slug } }">
 		<div class="weapon-tile">
 			<img v-if="weapon.picture"
 				class="weapon-image"
@@ -28,10 +28,6 @@ import { WeaponType } from '~/types/Weapon'
 export default Vue.extend({
 	name: 'WeaponContainer',
 	props: {
-		type: {
-			required: true,
-			type: String,
-		},
 		weapon: {
 			required: true,
 			type: Object as () => WeaponType,
@@ -41,19 +37,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.weapon-link {
-	flex: 1 1 auto;
-	margin-bottom: 10px;
-	text-decoration: none;
-	color: inherit;
-	&:hover {
-		.weapon-image {filter: contrast(1);}
-		.weapon-tile {border: 1px solid rgb(204, 173, 112);box-shadow: rgba(204, 173, 112, .4) 0 0 8px;}
-	}
-}
 .weapon-tile {
-	background: rgb(44, 39, 79);
-	border: 1px solid rgb(56, 47, 102);
+	background: #182634;
+	border: 1px solid #d4d1cb;
 	box-sizing: border-box;
 	box-shadow: rgba(21, 11, 37, .5) 0 2px 10px;
 	border-radius: 6px;
@@ -77,6 +63,16 @@ export default Vue.extend({
 	opacity: 1;
 	filter: contrast(0);
 	transition: all .4s ease-in-out;
+}
+.weapon-link {
+	flex: 1 1 auto;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		.weapon-image {filter: contrast(1);}
+		.weapon-tile {border: 1px solid rgb(204, 173, 112);box-shadow: rgba(204, 173, 112, .4) 0 0 8px;}
+	}
 }
 .weapon-infos {
 	position: absolute;

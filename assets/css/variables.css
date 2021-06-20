@@ -1,0 +1,282 @@
+/* stylelint-disable */
+/*! Variables
+  Forked from Shoelace.
+  Licensed under the MIT license.
+*/
+:root {
+	/*************************************************************************************************
+	* Core variables
+	*************************************************************************************************/
+
+	/* Fonts */
+	--font-sans-serif: sans-serif;
+	--font-serif: serif;
+	--font-system: system-ui;
+	--font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+
+	/* Colors (most courtesy of http://clrs.cc/) */
+	--color-white: white;
+	--color-navy: #001f3f;
+	--color-blue: #0074d9;
+	--color-aqua: #7fdbff;
+	--color-teal: #39cccc;
+	--color-olive: #3d9970;
+	--color-green: #2ecc40;
+	--color-lime: #01ff70;
+	--color-yellow: #ffdc00;
+	--color-orange: #ff851b;
+	--color-red: #ff4136;
+	--color-maroon: #85144b;
+	--color-fuchsia: #f012be;
+	--color-purple: #b10dc9;
+	--color-black: #111;
+	--color-gray: #aaa;
+	--color-silver: #ddd;
+
+	/* States */
+	--state-primary: var(--color-blue);
+	--state-secondary: var(--color-gray);
+	--state-success: var(--color-green);
+	--state-info: var(--color-teal);
+	--state-warning: var(--color-orange);
+	--state-danger: var(--color-red);
+	--state-light: var(--color-white);
+	--state-dark: var(--color-black);
+
+	/* Components */
+	--component-bg-color: #22262b;
+	--component-border-color: #ddd;
+	--component-border-radius: 0;
+	--component-border-width: 0;
+	--component-focus-width: 2px;
+	--component-padding-x: 1rem;
+	--component-padding-y: 1rem;
+	--component-speed: .1s;
+	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
+	--component-box-shadow-outer:  0 4px 10px rgba(0, 0, 0, .25);
+
+	/*************************************************************************************************
+	* Content
+	*************************************************************************************************/
+	--body-color: var(--color-white);
+	--body-color-muted: var(--color-gray);
+
+	--font-family: Lato, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	--font-size: 1rem; /* Most browsers use a default font size of 16px */
+	--font-size-small: 80%;
+	--font-weight-light: 300;
+	--font-weight: 400;
+	--font-weight-bold: 700;
+	--line-height: 1;
+
+	--link-color: #eee;
+	--link-text-decoration: none;
+	--link-color-hover: var(--state-accent-dark1);
+	--link-text-decoration-hover: underline;
+
+	/*************************************************************************************************
+	* Alerts
+	*************************************************************************************************/
+
+	--alert-border-radius: var(--component-border-radius);
+	--alert-border-width: 1px;
+	--alert-padding-x: var(--component-padding-x);
+	--alert-padding-y: var(--component-padding-y);
+
+	/* Default */
+	--alert-bg-color: var(--state-accent-dark1);
+	--alert-color: var(--body-color);
+	--alert-border-color: var(--state-accent-dark1);
+
+	/* Secondary */
+	--alert-bg-color-secondary: transparent;
+	--alert-color-secondary: var(--state-accent-dark1);
+	--alert-border-color-secondary: var(--state-accent-dark1);
+
+	/* Success */
+	--alert-bg-color-success: var(--state-success);
+	--alert-color-success: var(--body-color);
+	--alert-border-color-success: var(--state-success-border);
+
+	/* Info */
+	--alert-bg-color-info: var(--state-info);
+	--alert-color-info: var(--body-color);
+	--alert-border-color-info: var(--state-info-border);
+
+	/* Warning */
+	--alert-bg-color-warning: var(--state-warning);
+	--alert-color-warning: var(--body-color);
+	--alert-border-color-warning: var(--state-warning-border);
+
+	/* Danger */
+	--alert-bg-color-danger: var(--state-danger);
+	--alert-color-danger: var(--body-color);
+	--alert-border-color-danger: var(--state-danger-border);
+
+	/*************************************************************************************************
+	* Buttons
+	*************************************************************************************************/
+
+	--button-height-xs: var(--input-height-xs);
+	--button-height-sm: var(--input-height-sm);
+	--button-height: var(--input-height);
+	--button-height-lg: var(--input-height-lg);
+	--button-height-xl: var(--input-height-xl);
+	--button-font-size-xs: var(--input-font-size-xs);
+	--button-font-size-sm: var(--input-font-size-sm);
+	--button-font-size: var(--input-font-size);
+	--button-font-size-lg: var(--input-font-size-lg);
+	--button-font-size-xl: var(--input-font-size-xl);
+	--button-font-family: var(--input-font-family);
+	--button-font-weight: var(--input-font-weight);
+	--button-border-radius: var(--component-border-radius);
+	--button-border-width: var(--component-border-width);
+	--button-focus-width: var(--component-focus-width);
+	--button-speed: var(--component-speed);
+	--button-loader-size: 1em;
+	--button-loader-border-width: .15em;
+
+	/* Default */
+	--button-color: #3e4349;
+	--button-bg-color: #292e35;
+	--button-color-hover: #fff;
+	--button-bg-color-hover: #3e4349;
+
+	/* Secondary */
+	--button-color-secondary: var(--color-white);
+	--button-bg-color-secondary: var(--state-secondary);
+
+	/* Success */
+	--button-color-success: var(--color-white);
+	--button-bg-color-success: var(--state-success);
+
+	/* Info */
+	--button-color-info: var(--color-white);
+	--button-bg-color-info: var(--state-info);
+
+	/* Warning */
+	--button-color-warning: var(--color-white);
+	--button-bg-color-warning: var(--state-warning);
+
+	/* Danger */
+	--button-color-danger: var(--color-white);
+	--button-bg-color-danger: var(--state-danger);
+
+	/* Light */
+	--button-color-light: var(--state-dark);
+	--button-bg-color-light: color-mod(var(--state-light) shade(10%));
+
+	/* Dark */
+	--button-color-dark: var(--state-light);
+	--button-bg-color-dark: color-mod(var(--state-dark) tint(10%));
+
+	/*************************************************************************************************
+	* Forms
+	*************************************************************************************************/
+
+	--input-height-xs: 1.25rem;
+	--input-height-sm: 1.75rem;
+	--input-height: 2.25rem;
+	--input-height-lg: 2.75rem;
+	--input-height-xl: 3.25rem;
+	--input-font-size-xs: .625rem;
+	--input-font-size-sm: .875rem;
+	--input-font-size: 1rem;
+	--input-font-size-lg: 1.25rem;
+	--input-font-size-xl: 1.5rem;
+	--input-font-family: inherit;
+	--input-font-weight: inherit;
+	--input-border-width: 1px;
+	--input-border-radius: var(--component-border-radius);
+	--input-bg-color: transparent;
+
+	/*************************************************************************************************
+	* Grid
+	*************************************************************************************************/
+
+	--container-max-width-sm: 540px;
+	--container-max-width-md: 720px;
+	--container-max-width-lg: 960px;
+	--container-max-width-xl: 1140px;
+
+	--grid-gutter-width: 2rem;
+
+	/*************************************************************************************************
+	* Loaders
+	*************************************************************************************************/
+
+	--loader-thickness: .2rem;
+	--loader-thickness-xs: calc(var(--loader-thickness) / 2);
+	--loader-thickness-sm: calc(var(--loader-thickness) / 1.5);
+	--loader-thickness-lg: calc(var(--loader-thickness) * 1.5);
+	--loader-thickness-xl: calc(var(--loader-thickness) * 2);
+	--loader-size-xs: var(--input-height-xs);
+	--loader-size-sm: var(--input-height-sm);
+	--loader-size: var(--input-height);
+	--loader-size-lg: var(--input-height-lg);
+	--loader-size-xl: var(--input-height-xl);
+	--loader-speed: 750ms;
+	--loader-margin-x: .5em;
+	--loader-margin-y: 0;
+
+	/* Default */
+	--loader-color: var(--state-accent);
+	--loader-bg-color: #cef8fd;
+
+	/* Secondary */
+	--loader-color-secondary: var(--state-secondary);
+	--loader-bg-color-secondary: color-mod(var(--state-secondary) lightness(90%));
+
+	/* Success */
+	--loader-color-success: var(--state-success);
+	--loader-bg-color-success: color-mod(var(--state-success) lightness(90%));
+
+	/* Info */
+	--loader-color-info: var(--state-info);
+	--loader-bg-color-info: color-mod(var(--state-info) lightness(90%));
+
+	/* Warning */
+	--loader-color-warning: var(--state-warning);
+	--loader-bg-color-warning: color-mod(var(--state-warning) lightness(90%));
+
+	/* Danger */
+	--loader-color-danger: var(--state-danger);
+	--loader-bg-color-danger: color-mod(var(--state-danger) lightness(90%));
+
+	/* Light */
+	--loader-color-light: var(--state-light);
+	--loader-bg-color-light: color-mod(var(--state-light) lightness(90%));
+
+	/* Dark */
+	--loader-color-dark: var(--state-dark);
+	--loader-bg-color-dark: color-mod(var(--state-dark) lightness(90%));
+
+	/*************************************************************************************************
+	* Utilities
+	*************************************************************************************************/
+
+	--spacing-xs: .5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 1.5rem;
+	--spacing-lg: 2rem;
+	--spacing-xl: 2.5rem;
+}
+
+/* Core breakpoints */
+@custom-media --breakpoint-xs-up only screen and (min-width: 0);
+@custom-media --breakpoint-sm-up only screen and (min-width: 576px);
+@custom-media --breakpoint-md-up only screen and (min-width: 768px);
+@custom-media --breakpoint-lg-up only screen and (min-width: 992px);
+@custom-media --breakpoint-xl-up only screen and (min-width: 1200px);
+
+@custom-media --breakpoint-xs-down only screen and (max-width: 575px);
+@custom-media --breakpoint-sm-down only screen and (max-width: 767px);
+@custom-media --breakpoint-md-down only screen and (max-width: 991px);
+@custom-media --breakpoint-lg-down only screen and (max-width: 1199px);
+@custom-media --breakpoint-xl-down only screen and (min-width: 0);
+
+@custom-media --breakpoint-xs-only only screen and (min-width: 0) and (max-width: 575px);
+@custom-media --breakpoint-sm-only only screen and (min-width: 576px) and (max-width: 767px);
+@custom-media --breakpoint-md-only only screen and (min-width: 768px) and (max-width: 991px);
+@custom-media --breakpoint-lg-only only screen and (min-width: 992px) and (max-width: 1199px);
+@custom-media --breakpoint-xl-only only screen and (min-width: 1200px);

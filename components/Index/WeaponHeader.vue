@@ -16,17 +16,16 @@ export default {
 
 <style scoped>
 .weapon-label {
-	font-size: 1.2rem;
-	font-weight: 500;
-	line-height: 1.6rem;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	background: rgb(34, 30, 66);
+	background: #1c2228;
 	border-radius: 6px;
 	margin-bottom: 10px;
 	padding: 8px;
-	color: rgb(136, 144, 181);
+	color: #fff;
 	text-transform: uppercase;
 	flex: 0 0 auto;
 }

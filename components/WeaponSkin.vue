@@ -1,5 +1,5 @@
 <template>
-	<nuxt-link :to="{ name: 'type-weapon-skin', params: { type: type, weapon: weapon, skin: skin.slug }}" class="skin-tile">
+	<nuxt-link :to="{ name: 'weapon-skin', params: { weapon: weapon, skin: skin.slug }}" class="skin-tile">
 		<div class="skin-rarity hint--top" :aria-label="skin.rarity |ucfirst">
 			<img v-if="skin.rarity !== Rarity.STANDARD"
 				:src="rarity_icon"
@@ -47,7 +47,7 @@ export default Vue.extend({
 	padding: 1.5rem;
 	text-align: center;
 	border-radius: 6px;
-	background-color: #34164b;
+	background-color: #182634;
 }
 .skin-rarity {
 	position: absolute;

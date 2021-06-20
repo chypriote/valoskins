@@ -1,13 +1,20 @@
 <template>
-	<div class="container mx-auto">
-		<div class="flex -mx-2">
-			<section class="w-3/4 px-2">
-				<breadcrumb :crumbs="crumbs" class="text-black uppercase text-sm" />
-				<div class="overflow-hidden bg-white shadow-md mb-4 flex">
-					<skin-viewbox :skin="skin" :class="upgrades.length ? 'w-3/4' : ''" />
-					<skin-upgrades v-if="upgrades.length" :upgrades="upgrades" class="w-1/4" />
+	<div class="container">
+		<div class="row">
+			<section class="col-8">
+				<h2 class="title">{{ skin.name }}</h2>
+				<div class="row">
+					<div class="col">
+						<skin-viewbox :skin="skin" />
+						<skin-upgrades v-if="upgrades.length" :upgrades="upgrades" />
+					</div>
 				</div>
-
+				<div class="row">
+					<div class="col">
+					</div>
+				</div>
+			</section>
+			<aside class="col-4">
 				<div class="overflow-hidden bg-white shadow-md mb-4 flex flex-col px-4 py-2">
 					<div class="font-bold text-xl mb-2">Prices</div>
 					<div class="flex items-center">
@@ -25,31 +32,23 @@
 						</p>
 					</div>
 				</div>
-			</section>
-
-			<aside class="w-1/4 px-2">
-				<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins in collection</header>
-				<div class="bg-gray-200 shadow-md mb-4">
-					<related-skin v-for="item in skinsInCollection" :key="item.id" :skin="item" class="hover:bg-white transition-colors delay-200 ease-linear" />
-				</div>
-				<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins for {{ weapon.name }}</header>
-				<div class="bg-gray-200 shadow-md mb-4">
-					<related-skin v-for="item in skinsForWeapon" :key="item.id" :skin="item" class="hover:bg-white transition-colors delay-200 ease-linear" />
-				</div>
-				<div>
-					<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">{{ type.name }}</header>
-					<div class="bg-gray-200 shadow-md mb-4">
-						<nuxt-link
-							v-for="item in type.weapons"
-							:key="item.id"
-							:to="{name: 'type-weapon', params: { type: type.slug, weapon: item.slug } }"
-							class="px-4 py-2 flex hover:bg-white transition-colors delay-200 ease-linear items-center">
-							<img :src="item.picture.formats.thumbnail.url" :alt="item.name" class="mr-2 w-20" />
-							<p>{{ item.name }}</p>
-						</nuxt-link>
+			</aside>
+		</div>
+		<div class="row">
+			<section class="col col-12">
+				<div class="row">
+					<div class="col">
+						<h4>Other Skins in collection</h4>
+						<div class="row">
+							<related-skin v-for="item in skinsInCollection" :key="item.id" :skin="item" class=" col col-3" />
+						</div>
+						<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins for {{ weapon.name }}</header>
+						<div class="row">
+							<related-skin v-for="item in skinsForWeapon" :key="item.id" :skin="item" class="col col-3" />
+						</div>
 					</div>
 				</div>
-			</aside>
+			</section>
 		</div>
 	</div>
 </template>
@@ -59,8 +58,7 @@ import Vue from 'vue'
 import { mapState } from 'vuex'
 import { Context } from '@nuxt/types/app'
 import { orderBy } from 'lodash-es'
-import { Rarity, SkinCollection, SkinUpgrade, Weapon, WeaponSkin, WeaponType } from '~/types/Weapon'
-import Breadcrumb from '~/components/Breadcrumb.vue'
+import { Rarity, SkinCollection, SkinUpgrade, Weapon, WeaponSkin } from '~/types/Weapon'
 import SkinUpgrades from '~/components/SkinPage/SkinUpgrades.vue'
 import SkinViewbox from '~/components/SkinPage/SkinViewbox.vue'
 import RelatedSkin from '~/components/SkinPage/RelatedSkin.vue'
@@ -70,30 +68,20 @@ interface IData {
 	Rarity: typeof Rarity
 	collection?: SkinCollection
 	weapon?: Weapon
-	type?: WeaponType
 }
 
 export default Vue.extend({
 	name: 'WeaponSkin',
-	components: { SkinViewbox, SkinUpgrades, Breadcrumb, RelatedSkin },
+	components: { SkinViewbox, SkinUpgrades, RelatedSkin },
 	async asyncData ({ $api, params, $strapi }: Context) {
-		const [type, weapon]: [WeaponType, Weapon] = await Promise.all([
-			$api.getWeaponTypeBySlug(params.type),
-			$api.getWeaponBySlug(params.weapon),
-		])
-		const skin: WeaponSkin = await $api.getSkinBySlugAndWeapon(params.skin, weapon.id)
+		const weapon: Weapon = await $api.getWeaponBySlug(params.weapon)
+		const skin = await $api.getSkinBySlugAndWeapon(params.skin, weapon.id)
 		const collection: SkinCollection = await $strapi.findOne('skin-collections', skin.skin_collection.id)
 
 		return {
 			weapon,
-			type,
 			skin,
 			collection,
-			crumbs: [
-				{ name: 'index', title: 'home' },
-				{ name: 'type', title: type?.name, params: { type: type?.slug } },
-				{ name: 'type-weapon', title: weapon?.name, params: { type: type?.slug, weapon: weapon?.slug } },
-			],
 		}
 	},
 	data: (): IData => ({ Rarity }),
@@ -128,3 +116,12 @@ export default Vue.extend({
 	},
 })
 </script>
+
+<style scoped>
+.title {
+	color: #fff;
+	font-family: jaf-bernina-sans-condensed, sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+}
+</style>

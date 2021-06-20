@@ -20,7 +20,6 @@ export default {
 	buildModules: [
 		'@nuxt/typescript-build',
 		'@nuxtjs/stylelint-module',
-		'@nuxtjs/tailwindcss',
 	],
 	modules: ['@nuxtjs/dotenv', '@nuxtjs/pwa', '@nuxtjs/strapi', '@nuxtjs/svg'],
 	build: {
@@ -31,7 +30,9 @@ export default {
 		postcss: {
 			parser: require('postcss-comment'),
 			plugins: {
+				'postcss-import': {},
 				'postcss-nested': {},
+				'postcss-custom-media': {},
 				'postcss-custom-properties': {},
 				'postcss-color-mod-function': {},
 			},

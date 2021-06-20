@@ -1,7 +1,7 @@
 <template>
-	<div id="app" class="custom-background bg-gray-100 text-gray-800 h-screen">
+	<div id="app">
 		<navbar />
-		<nuxt />
+		<nuxt class="main" />
 	</div>
 </template>
 
@@ -13,3 +13,10 @@ export default Vue.extend({
 	components: { Navbar },
 })
 </script>
+
+<style scoped>
+.main {
+	margin: 0 auto;
+	padding-top: 3.5rem;
+}
+</style>

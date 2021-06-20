@@ -32,12 +32,11 @@
 import Vue from 'vue'
 import { Context } from '@nuxt/types/app'
 import { partition } from 'lodash-es'
-import { Weapon, WeaponType, WeaponSkin as Skin, rarityOrder, Rarity } from '~/types/Weapon'
+import { Weapon, WeaponSkin as Skin, rarityOrder, Rarity } from '~/types/Weapon'
 import WeaponSkin from '~/components/WeaponSkin.vue'
 
 interface IData {
 	weapon: Weapon|null
-	type?: WeaponType
 	skins: Skin[]
 	unavailables?: Skin[]
 	Rarity: typeof Rarity
@@ -47,21 +46,16 @@ export default Vue.extend({
 	name: 'WeaponIndex',
 	components: { WeaponSkin },
 	async asyncData ({ $api, params }: Context) {
-		const [type, weapon]: [WeaponType, Weapon] = await Promise.all([
-			$api.getWeaponTypeBySlug(params.type),
-			$api.getWeaponBySlug(params.weapon),
-		])
+		const weapon: Weapon = await $api.getWeaponBySlug(params.weapon)
 
 		const [skins, unavailables] = partition(weapon?.weapon_skins.sort((a: Skin, b: Skin) => rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity)), (skin: Skin) => skin.available)
 
 		return {
 			weapon,
-			type,
 			skins,
 			unavailables,
 			crumbs: [
 				{ name: 'index', title: 'home' },
-				{ name: 'type', title: type?.name, params: { type: type?.slug } },
 			],
 		}
 	},
