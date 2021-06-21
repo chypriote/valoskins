@@ -32,3 +32,9 @@ export default Vue.extend({
 	},
 })
 </script>
+
+<style scoped>
+img {
+	max-width: 5rem;
+}
+</style>

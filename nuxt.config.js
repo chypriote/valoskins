@@ -12,7 +12,7 @@ export default {
 		concurrency: 200,
 		interval: 1000,
 	},
-	css: ['hint.css', '~/assets/css/app.css'],
+	css: ['reset-css', 'hint.css', '~/assets/css/app.css'],
 	plugins: [
 		'~/plugins/filters',
 		'~/plugins/api',

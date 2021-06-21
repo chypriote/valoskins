@@ -34,7 +34,8 @@
     "postcss-comment": "^2.0",
     "postcss-custom-media": "^7.0",
     "postcss-custom-properties": "^9.2",
-    "postcss-nested": "^4.2"
+    "postcss-nested": "^4.2",
+    "reset-css": "^5.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15",

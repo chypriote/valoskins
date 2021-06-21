@@ -1,22 +1,21 @@
 <template>
 	<div class="container">
 		<div class="row">
-			<section class="col-8">
-				<h2 class="title">{{ skin.name }}</h2>
-				<div class="row">
-					<div class="col">
-						<skin-viewbox :skin="skin" />
-						<skin-upgrades v-if="upgrades.length" :upgrades="upgrades" />
+			<div class="col-8">
+				<skin-viewbox :skin="skin" />
+				<skin-upgrades v-if="upgrades.length" :upgrades="upgrades" />
+
+				<div class="flex flex-col justify-center">
+					<div v-if="chromas.length" class="flex justify-center">
+						<div v-for="chroma in chromas" :key="chroma.id">
+							<img class="h-16 w-auto" style="max-width: 5rem;" :src="chroma.media.url" :alt="chroma.displayText" :title="chroma.displayText" />
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col">
-					</div>
-				</div>
-			</section>
-			<aside class="col-4">
-				<div class="overflow-hidden bg-white shadow-md mb-4 flex flex-col px-4 py-2">
-					<div class="font-bold text-xl mb-2">Prices</div>
+			</div>
+			<div class="col-4">
+				<div class="card">
+					<h2 class="title">{{ skin.name }}</h2>
 					<div class="flex items-center">
 						<p class="text-xl leading-none">{{ skin.price }}</p>
 						<img src="~/assets/img/valorantpoints.png" alt="Valorant Points" class="w-5 h-5 ml-1" />
@@ -24,15 +23,8 @@
 					<div class="flex items-center">
 						<p class="text-xl leading-none">~{{ roundedPrice(skin.price * vpPrice) }} €</p>
 					</div>
-
-					<div class="px-6 py-4">
-						<div class="font-bold text-xl mb-2">{{ skin.name }}</div>
-						<p class="text-gray-700 text-base">
-							{{ skin.name }}
-						</p>
-					</div>
 				</div>
-			</aside>
+			</div>
 		</div>
 		<div class="row">
 			<section class="col col-12">
@@ -42,7 +34,11 @@
 						<div class="row">
 							<related-skin v-for="item in skinsInCollection" :key="item.id" :skin="item" class=" col col-3" />
 						</div>
-						<header class="uppercase text-sm text-gray-600 hover:text-blue-800 pb-1">Other Skins for {{ weapon.name }}</header>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h4>Other Skins for {{ weapon.name }}</h4>
 						<div class="row">
 							<related-skin v-for="item in skinsForWeapon" :key="item.id" :skin="item" class="col col-3" />
 						</div>
@@ -58,14 +54,14 @@ import Vue from 'vue'
 import { mapState } from 'vuex'
 import { Context } from '@nuxt/types/app'
 import { orderBy } from 'lodash-es'
-import { Rarity, SkinCollection, SkinUpgrade, Weapon, WeaponSkin } from '~/types/Weapon'
+import { Rarity, SkinCollection, SkinUpgrade, Upgrade, Weapon, WeaponSkin } from '~/types/Weapon'
 import SkinUpgrades from '~/components/SkinPage/SkinUpgrades.vue'
 import SkinViewbox from '~/components/SkinPage/SkinViewbox.vue'
 import RelatedSkin from '~/components/SkinPage/RelatedSkin.vue'
 
 interface IData {
-	skin?: WeaponSkin
 	Rarity: typeof Rarity
+	skin?: WeaponSkin
 	collection?: SkinCollection
 	weapon?: Weapon
 }
@@ -89,6 +85,7 @@ export default Vue.extend({
 		...mapState({
 			vpPrice: 'vpPrice',
 		}),
+		chromas () { return orderBy(this.skin?.skin_upgrades.filter(upgrade => upgrade.type === Upgrade.CHROMA), 'level', 'asc') },
 		skinsInCollection (): WeaponSkin[] { return this.collection?.weapon_skins.filter(item => item.id !== this.skin?.id) || [] },
 		skinsForWeapon (): WeaponSkin[] { return this.weapon?.weapon_skins.filter(item => item.id !== this.skin?.id && item.available) || [] },
 		rarity_icon () { return require(`~/assets/img/tiers/${this.skin?.rarity}.png`) },

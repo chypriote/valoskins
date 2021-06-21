@@ -1,6 +1,6 @@
 <template>
-	<div id="navbar" class="navbar">
-		<header class="container">
+	<div id="navbar" role="navigation" class="navbar">
+		<div class="container">
 			<div class="logo">
 				<nuxt-link to="/">Logo</nuxt-link>
 			</div>
@@ -9,7 +9,7 @@
 				<nuxt-link to="/skins">Skins</nuxt-link>
 				<nuxt-link to="/collections">Collections</nuxt-link>
 			</nav>
-		</header>
+		</div>
 	</div>
 </template>
 
@@ -26,17 +26,22 @@ export default Vue.extend({
 
 <style scoped>
 .navbar {
-	margin: 0 auto;
-	display: flex;
-	flex: 0 0 auto;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	background: #0b1219;
-	position: fixed;
 	top: 0;
-	z-index: 1000;
+	user-select: none;
+	width: 100%;
+	min-width: 100%;
+	z-index: 100;
+	background: var(--main-nav-background-color);
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 16%);
 	height: 3.5rem;
+	pointer-events: auto;
+	transform: translateZ(0);
+	left: 0;
+	position: fixed;
+	right: 0;
+	min-height: 3.25rem;
+	align-items: stretch;
+	display: flex;
 }
 header {
 	padding: 1rem;

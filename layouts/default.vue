@@ -15,8 +15,5 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.main {
-	margin: 0 auto;
-	padding-top: 3.5rem;
-}
+.main {padding-top: 3.5rem;}
 </style>
